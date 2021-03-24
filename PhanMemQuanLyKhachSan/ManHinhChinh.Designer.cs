@@ -517,7 +517,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(237, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Mã Bàn: MBA001";
+            this.label2.Text = "Mã Bàn: MBA002\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -606,7 +606,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(237, 24);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Mã Bàn: MBA001";
+            this.label5.Text = "Mã Bàn: MBA003";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -695,7 +695,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(237, 24);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Mã Bàn: MBA001";
+            this.label8.Text = "Mã Bàn: MBA004";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
@@ -784,7 +784,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(237, 24);
             this.label11.TabIndex = 1;
-            this.label11.Text = "Mã Bàn: MBA001";
+            this.label11.Text = "Mã Bàn: MBA008";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
@@ -873,7 +873,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(237, 24);
             this.label14.TabIndex = 1;
-            this.label14.Text = "Mã Bàn: MBA001";
+            this.label14.Text = "Mã Bàn: MBA007";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
@@ -962,7 +962,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(237, 24);
             this.label17.TabIndex = 1;
-            this.label17.Text = "Mã Bàn: MBA001";
+            this.label17.Text = "Mã Bàn: MBA006";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
@@ -1051,7 +1051,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(237, 24);
             this.label20.TabIndex = 1;
-            this.label20.Text = "Mã Bàn: MBA001";
+            this.label20.Text = "Mã Bàn: MBA005";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label21
@@ -1140,7 +1140,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(237, 24);
             this.label23.TabIndex = 1;
-            this.label23.Text = "Mã Bàn: MBA001";
+            this.label23.Text = "Mã Bàn: MBA012";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24
@@ -1229,7 +1229,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(237, 24);
             this.label26.TabIndex = 1;
-            this.label26.Text = "Mã Bàn: MBA001";
+            this.label26.Text = "Mã Bàn: MBA011";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label27
@@ -1318,7 +1318,7 @@
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(237, 24);
             this.label29.TabIndex = 1;
-            this.label29.Text = "Mã Bàn: MBA001";
+            this.label29.Text = "Mã Bàn: MBA010";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label30
@@ -1407,7 +1407,7 @@
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(237, 24);
             this.label32.TabIndex = 1;
-            this.label32.Text = "Mã Bàn: MBA001";
+            this.label32.Text = "Mã Bàn: MBA009";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label33
@@ -1496,7 +1496,7 @@
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(237, 24);
             this.label35.TabIndex = 1;
-            this.label35.Text = "Mã Bàn: MBA001";
+            this.label35.Text = "Mã Bàn: MBA016";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label36
@@ -1585,7 +1585,7 @@
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(237, 24);
             this.label38.TabIndex = 1;
-            this.label38.Text = "Mã Bàn: MBA001";
+            this.label38.Text = "Mã Bàn: MBA015";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label39
@@ -1674,7 +1674,7 @@
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(237, 24);
             this.label41.TabIndex = 1;
-            this.label41.Text = "Mã Bàn: MBA001";
+            this.label41.Text = "Mã Bàn: MBA014";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label42
@@ -1763,7 +1763,7 @@
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(237, 24);
             this.label44.TabIndex = 1;
-            this.label44.Text = "Mã Bàn: MBA001";
+            this.label44.Text = "Mã Bàn: MBA013";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label45
