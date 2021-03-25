@@ -61,10 +61,10 @@
             this.dgvCapNhatThucPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCapNhatThucPham.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvCapNhatThucPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCapNhatThucPham.Location = new System.Drawing.Point(26, 91);
+            this.dgvCapNhatThucPham.Location = new System.Drawing.Point(21, 89);
             this.dgvCapNhatThucPham.Name = "dgvCapNhatThucPham";
             this.dgvCapNhatThucPham.ReadOnly = true;
-            this.dgvCapNhatThucPham.Size = new System.Drawing.Size(644, 502);
+            this.dgvCapNhatThucPham.Size = new System.Drawing.Size(552, 485);
             this.dgvCapNhatThucPham.TabIndex = 14;
             // 
             // btnThoatCapNhatVatTu
@@ -80,6 +80,7 @@
             this.btnThoatCapNhatVatTu.Text = "Trở Về";
             this.btnThoatCapNhatVatTu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoatCapNhatVatTu.UseVisualStyleBackColor = false;
+            this.btnThoatCapNhatVatTu.Click += new System.EventHandler(this.btnThoatCapNhatVatTu_Click);
             // 
             // label2
             // 
@@ -91,14 +92,14 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(849, 294);
+            this.textBox3.Location = new System.Drawing.Point(740, 294);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(124, 20);
             this.textBox3.TabIndex = 45;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(849, 240);
+            this.textBox4.Location = new System.Drawing.Point(740, 240);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(124, 20);
             this.textBox4.TabIndex = 44;
@@ -108,7 +109,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(719, 291);
+            this.label4.Location = new System.Drawing.Point(610, 291);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 22);
             this.label4.TabIndex = 43;
@@ -119,7 +120,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(719, 240);
+            this.label5.Location = new System.Drawing.Point(610, 240);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 22);
             this.label5.TabIndex = 42;
@@ -127,14 +128,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(848, 185);
+            this.textBox2.Location = new System.Drawing.Point(739, 185);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 41;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(848, 131);
+            this.textBox1.Location = new System.Drawing.Point(739, 131);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 40;
@@ -144,7 +145,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(718, 182);
+            this.label1.Location = new System.Drawing.Point(609, 182);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 22);
             this.label1.TabIndex = 39;
@@ -155,7 +156,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(718, 131);
+            this.label3.Location = new System.Drawing.Point(609, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 22);
             this.label3.TabIndex = 38;
@@ -167,7 +168,7 @@
             this.btnXoaThucPham.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaThucPham.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconDelete;
             this.btnXoaThucPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaThucPham.Location = new System.Drawing.Point(715, 412);
+            this.btnXoaThucPham.Location = new System.Drawing.Point(606, 412);
             this.btnXoaThucPham.Name = "btnXoaThucPham";
             this.btnXoaThucPham.Size = new System.Drawing.Size(175, 45);
             this.btnXoaThucPham.TabIndex = 37;
@@ -181,7 +182,7 @@
             this.btnThemThucPham.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemThucPham.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconThem;
             this.btnThemThucPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemThucPham.Location = new System.Drawing.Point(715, 339);
+            this.btnThemThucPham.Location = new System.Drawing.Point(606, 339);
             this.btnThemThucPham.Name = "btnThemThucPham";
             this.btnThemThucPham.Size = new System.Drawing.Size(175, 45);
             this.btnThemThucPham.TabIndex = 36;
@@ -195,7 +196,7 @@
             this.btnLuuCapNhatThucPham.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuuCapNhatThucPham.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconLuu;
             this.btnLuuCapNhatThucPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuCapNhatThucPham.Location = new System.Drawing.Point(715, 491);
+            this.btnLuuCapNhatThucPham.Location = new System.Drawing.Point(606, 491);
             this.btnLuuCapNhatThucPham.Name = "btnLuuCapNhatThucPham";
             this.btnLuuCapNhatThucPham.Size = new System.Drawing.Size(84, 45);
             this.btnLuuCapNhatThucPham.TabIndex = 35;

@@ -82,6 +82,7 @@
             this.btnThoatCapNhatDichVu.Text = "Trở Về";
             this.btnThoatCapNhatDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoatCapNhatDichVu.UseVisualStyleBackColor = false;
+            this.btnThoatCapNhatDichVu.Click += new System.EventHandler(this.btnThoatCapNhatDichVu_Click);
             // 
             // dgvCapNhatMonAn
             // 

@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace PhanMemQuanLyKhachSan
 {
-    public partial class CapNhatBoPhanNhanVien : Form
+    public partial class frmCapNhatBoPhanNhanVien : Form
     {
-        public CapNhatBoPhanNhanVien()
+        public frmCapNhatBoPhanNhanVien()
         {
             InitializeComponent();
         }
 
-      
+        private void btnTroVeBPNV_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

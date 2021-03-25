@@ -65,6 +65,7 @@
             this.btnTroVeCuaThongKe.Text = "Trở về";
             this.btnTroVeCuaThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTroVeCuaThongKe.UseVisualStyleBackColor = false;
+            this.btnTroVeCuaThongKe.Click += new System.EventHandler(this.btnTroVeCuaThongKe_Click);
             // 
             // label9
             // 

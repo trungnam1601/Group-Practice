@@ -18,6 +18,9 @@ namespace PhanMemQuanLyKhachSan
             InitializeComponent();
         }
 
-        
+        private void btnThoatCapNhatDichVu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

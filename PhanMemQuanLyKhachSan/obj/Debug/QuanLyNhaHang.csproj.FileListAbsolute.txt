@@ -33,7 +33,6 @@ E:\Group-Practice\PhanMemQuanLyKhachSan\bin\Debug\EntityFramework.SqlServer.dll
 E:\Group-Practice\PhanMemQuanLyKhachSan\bin\Debug\EntityFramework.xml
 E:\Group-Practice\PhanMemQuanLyKhachSan\bin\Debug\EntityFramework.SqlServer.xml
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\QuanLyNhaHang.csprojAssemblyReference.cache
-E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.CapNhatBoPhanNhanVien.resources
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmCapNhatChiNhanh.resources
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmCapNhatBanAn.resources
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmCapNhatMonAn.resources
@@ -46,10 +45,11 @@ E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmChiTi
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmQuanLyKhachHang.resources
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmQuanLyNhanVien.resources
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.Properties.Resources.resources
-E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmQuanLyPhong.resources
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmCapNhatThongTinNhanVien.resources
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\QuanLyNhaHang.csproj.GenerateResource.cache
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\QuanLyNhaHang.csproj.CoreCompileInputs.cache
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\QuanLyNhaHang.csproj.CopyComplete
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.exe
 E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.pdb
+E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmQuanLyNhaHang.resources
+E:\Group-Practice\PhanMemQuanLyKhachSan\obj\Debug\PhanMemQuanLyKhachSan.frmCapNhatBoPhanNhanVien.resources

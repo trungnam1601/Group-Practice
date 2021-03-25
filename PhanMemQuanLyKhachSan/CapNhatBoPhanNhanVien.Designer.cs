@@ -1,7 +1,7 @@
 ﻿
 namespace PhanMemQuanLyKhachSan
 {
-    partial class CapNhatBoPhanNhanVien
+    partial class frmCapNhatBoPhanNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -168,8 +168,9 @@ namespace PhanMemQuanLyKhachSan
             this.btnTroVeBPNV.Text = "Trở về";
             this.btnTroVeBPNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTroVeBPNV.UseVisualStyleBackColor = false;
+            this.btnTroVeBPNV.Click += new System.EventHandler(this.btnTroVeBPNV_Click);
             // 
-            // CapNhatBoPhanNhanVien
+            // frmCapNhatBoPhanNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -186,7 +187,7 @@ namespace PhanMemQuanLyKhachSan
             this.Controls.Add(this.btnSuaBoPhan);
             this.Controls.Add(this.btnXoaBoPhan);
             this.Controls.Add(this.btnThemBoPhan);
-            this.Name = "CapNhatBoPhanNhanVien";
+            this.Name = "frmCapNhatBoPhanNhanVien";
             this.Text = "Cập Nhật Bộ Phận Nhân Viên";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatBoPhanNV)).EndInit();
             this.ResumeLayout(false);

@@ -19,9 +19,7 @@ namespace PhanMemQuanLyKhachSan
 
         private void BtnTroVeCuaQLNV_Click(object sender, EventArgs e)
         {
-            frmQuanLyPhong qlp = new frmQuanLyPhong();
-            qlp.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

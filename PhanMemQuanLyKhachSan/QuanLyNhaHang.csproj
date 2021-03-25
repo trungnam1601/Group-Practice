@@ -93,6 +93,7 @@
     <Compile Include="CapNhatBoPhanNhanVien.Designer.cs">
       <DependentUpon>CapNhatBoPhanNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\Helper.cs" />
     <Compile Include="Model\ChiTietHoaDon.cs" />
     <Compile Include="Model\DichVu.cs" />
     <Compile Include="Model\HoaDon.cs" />
@@ -112,10 +113,10 @@
       <DependentUpon>CapNhatNhaCungCap.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LienHe.cs">
+    <Compile Include="MainForms\LienHe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LienHe.Designer.cs">
+    <Compile Include="MainForms\LienHe.Designer.cs">
       <DependentUpon>LienHe.cs</DependentUpon>
     </Compile>
     <Compile Include="ManHinhChinh.cs">
@@ -130,16 +131,16 @@
     <Compile Include="ChiTietPhieuDatBan.Designer.cs">
       <DependentUpon>ChiTietPhieuDatBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManHinhQuanLyKhachHang.cs">
+    <Compile Include="MainForms\ManHinhQuanLyKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManHinhQuanLyKhachHang.Designer.cs">
+    <Compile Include="MainForms\ManHinhQuanLyKhachHang.Designer.cs">
       <DependentUpon>ManHinhQuanLyKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManHinhQuanLyNhanVien.cs">
+    <Compile Include="MainForms\ManHinhQuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManHinhQuanLyNhanVien.Designer.cs">
+    <Compile Include="MainForms\ManHinhQuanLyNhanVien.Designer.cs">
       <DependentUpon>ManHinhQuanLyNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -149,10 +150,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyNhaHang.cs">
+    <Compile Include="MainForms\QuanLyNhaHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyNhaHang.Designer.cs">
+    <Compile Include="MainForms\QuanLyNhaHang.Designer.cs">
       <DependentUpon>QuanLyNhaHang.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongTinNhanVien.cs">
@@ -182,7 +183,7 @@
     <EmbeddedResource Include="CapNhatNhaCungCap.resx">
       <DependentUpon>CapNhatNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LienHe.resx">
+    <EmbeddedResource Include="MainForms\LienHe.resx">
       <DependentUpon>LienHe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManHinhChinh.resx">
@@ -191,10 +192,10 @@
     <EmbeddedResource Include="ChiTietPhieuDatBan.resx">
       <DependentUpon>ChiTietPhieuDatBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManHinhQuanLyKhachHang.resx">
+    <EmbeddedResource Include="MainForms\ManHinhQuanLyKhachHang.resx">
       <DependentUpon>ManHinhQuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManHinhQuanLyNhanVien.resx">
+    <EmbeddedResource Include="MainForms\ManHinhQuanLyNhanVien.resx">
       <DependentUpon>ManHinhQuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -202,7 +203,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyNhaHang.resx">
+    <EmbeddedResource Include="MainForms\QuanLyNhaHang.resx">
       <DependentUpon>QuanLyNhaHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinNhanVien.resx">

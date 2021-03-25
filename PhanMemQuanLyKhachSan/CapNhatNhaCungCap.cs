@@ -18,6 +18,9 @@ namespace PhanMemQuanLyKhachSan
             InitializeComponent();
         }
 
-       
+        private void btnTroVeCuaThongKe_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
