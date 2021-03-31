@@ -55,5 +55,10 @@ namespace PhanMemQuanLyKhachSan
         {
             OpenChildForm(new frmQuanLyKhachHang());
         }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

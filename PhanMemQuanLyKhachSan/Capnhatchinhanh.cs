@@ -23,9 +23,5 @@ namespace PhanMemQuanLyKhachSan
             this.Close();
         }
 
-        private void btHuy_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

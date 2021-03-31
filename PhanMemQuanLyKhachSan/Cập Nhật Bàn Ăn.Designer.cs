@@ -49,7 +49,7 @@
             this.lblCapNhatBanAn.AutoSize = true;
             this.lblCapNhatBanAn.BackColor = System.Drawing.Color.Transparent;
             this.lblCapNhatBanAn.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCapNhatBanAn.Location = new System.Drawing.Point(346, 23);
+            this.lblCapNhatBanAn.Location = new System.Drawing.Point(291, 9);
             this.lblCapNhatBanAn.Name = "lblCapNhatBanAn";
             this.lblCapNhatBanAn.Size = new System.Drawing.Size(252, 39);
             this.lblCapNhatBanAn.TabIndex = 0;
@@ -57,11 +57,11 @@
             // 
             // btnLuuCapNhatBanAn
             // 
-            this.btnLuuCapNhatBanAn.BackColor = System.Drawing.Color.Lime;
+            this.btnLuuCapNhatBanAn.BackColor = System.Drawing.Color.White;
             this.btnLuuCapNhatBanAn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuCapNhatBanAn.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconLuu;
+            this.btnLuuCapNhatBanAn.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconfinder_Save_27876231;
             this.btnLuuCapNhatBanAn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuCapNhatBanAn.Location = new System.Drawing.Point(585, 416);
+            this.btnLuuCapNhatBanAn.Location = new System.Drawing.Point(484, 82);
             this.btnLuuCapNhatBanAn.Name = "btnLuuCapNhatBanAn";
             this.btnLuuCapNhatBanAn.Size = new System.Drawing.Size(85, 40);
             this.btnLuuCapNhatBanAn.TabIndex = 7;
@@ -71,11 +71,11 @@
             // 
             // btnHuyCapNhatBanAn
             // 
-            this.btnHuyCapNhatBanAn.BackColor = System.Drawing.Color.Lime;
+            this.btnHuyCapNhatBanAn.BackColor = System.Drawing.Color.White;
             this.btnHuyCapNhatBanAn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyCapNhatBanAn.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconHuy;
+            this.btnHuyCapNhatBanAn.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconfinder_Remove_27874211;
             this.btnHuyCapNhatBanAn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyCapNhatBanAn.Location = new System.Drawing.Point(757, 416);
+            this.btnHuyCapNhatBanAn.Location = new System.Drawing.Point(632, 82);
             this.btnHuyCapNhatBanAn.Name = "btnHuyCapNhatBanAn";
             this.btnHuyCapNhatBanAn.Size = new System.Drawing.Size(85, 40);
             this.btnHuyCapNhatBanAn.TabIndex = 8;
@@ -103,15 +103,16 @@
             this.dgvCapNhatBanAn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCapNhatBanAn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvCapNhatBanAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCapNhatBanAn.Location = new System.Drawing.Point(12, 99);
+            this.dgvCapNhatBanAn.Location = new System.Drawing.Point(149, 241);
             this.dgvCapNhatBanAn.Name = "dgvCapNhatBanAn";
             this.dgvCapNhatBanAn.ReadOnly = true;
-            this.dgvCapNhatBanAn.Size = new System.Drawing.Size(516, 427);
+            this.dgvCapNhatBanAn.RowHeadersWidth = 51;
+            this.dgvCapNhatBanAn.Size = new System.Drawing.Size(568, 176);
             this.dgvCapNhatBanAn.TabIndex = 10;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(706, 308);
+            this.textBox7.Location = new System.Drawing.Point(296, 188);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(124, 20);
             this.textBox7.TabIndex = 56;
@@ -121,7 +122,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label8.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(554, 308);
+            this.label8.Location = new System.Drawing.Point(144, 188);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(137, 22);
             this.label8.TabIndex = 54;
@@ -132,7 +133,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(554, 257);
+            this.label9.Location = new System.Drawing.Point(145, 150);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(72, 22);
             this.label9.TabIndex = 53;
@@ -140,7 +141,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(706, 148);
+            this.textBox10.Location = new System.Drawing.Point(297, 82);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(124, 20);
             this.textBox10.TabIndex = 51;
@@ -150,7 +151,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(553, 199);
+            this.label10.Location = new System.Drawing.Point(145, 114);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 22);
             this.label10.TabIndex = 50;
@@ -161,7 +162,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label11.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(553, 148);
+            this.label11.Location = new System.Drawing.Point(144, 82);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(88, 22);
             this.label11.TabIndex = 49;
@@ -170,7 +171,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(706, 200);
+            this.comboBox1.Location = new System.Drawing.Point(298, 115);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 57;
@@ -179,7 +180,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(706, 258);
+            this.comboBox2.Location = new System.Drawing.Point(297, 151);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 58;
@@ -188,8 +189,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PhanMemQuanLyKhachSan.Properties.Resources.b18;
-            this.ClientSize = new System.Drawing.Size(867, 568);
+            this.BackgroundImage = global::PhanMemQuanLyKhachSan.Properties.Resources.b133;
+            this.ClientSize = new System.Drawing.Size(867, 450);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox7);

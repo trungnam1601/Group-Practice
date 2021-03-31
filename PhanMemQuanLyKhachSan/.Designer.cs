@@ -46,7 +46,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(233, 11);
+            this.label1.Location = new System.Drawing.Point(201, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(448, 50);
             this.label1.TabIndex = 0;
@@ -72,7 +72,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(594, 249);
+            this.label9.Location = new System.Drawing.Point(139, 169);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 22);
             this.label9.TabIndex = 65;
@@ -80,7 +80,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(746, 140);
+            this.textBox10.Location = new System.Drawing.Point(292, 89);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(124, 20);
             this.textBox10.TabIndex = 64;
@@ -90,7 +90,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(593, 191);
+            this.label10.Location = new System.Drawing.Point(138, 129);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(142, 22);
             this.label10.TabIndex = 63;
@@ -101,7 +101,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label11.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(593, 140);
+            this.label11.Location = new System.Drawing.Point(139, 89);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(141, 22);
             this.label11.TabIndex = 62;
@@ -112,19 +112,19 @@
             this.dgvCapNhatNhaCungCap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCapNhatNhaCungCap.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvCapNhatNhaCungCap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCapNhatNhaCungCap.Location = new System.Drawing.Point(52, 91);
+            this.dgvCapNhatNhaCungCap.Location = new System.Drawing.Point(132, 225);
             this.dgvCapNhatNhaCungCap.Name = "dgvCapNhatNhaCungCap";
             this.dgvCapNhatNhaCungCap.ReadOnly = true;
-            this.dgvCapNhatNhaCungCap.Size = new System.Drawing.Size(516, 427);
+            this.dgvCapNhatNhaCungCap.Size = new System.Drawing.Size(535, 184);
             this.dgvCapNhatNhaCungCap.TabIndex = 61;
             // 
             // btnHuyCapNhatBanAn
             // 
-            this.btnHuyCapNhatBanAn.BackColor = System.Drawing.Color.Lime;
+            this.btnHuyCapNhatBanAn.BackColor = System.Drawing.Color.White;
             this.btnHuyCapNhatBanAn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyCapNhatBanAn.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconHuy;
+            this.btnHuyCapNhatBanAn.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconfinder_Remove_2787423;
             this.btnHuyCapNhatBanAn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyCapNhatBanAn.Location = new System.Drawing.Point(785, 325);
+            this.btnHuyCapNhatBanAn.Location = new System.Drawing.Point(582, 100);
             this.btnHuyCapNhatBanAn.Name = "btnHuyCapNhatBanAn";
             this.btnHuyCapNhatBanAn.Size = new System.Drawing.Size(85, 40);
             this.btnHuyCapNhatBanAn.TabIndex = 60;
@@ -134,11 +134,11 @@
             // 
             // btnLuuCapNhatBanAn
             // 
-            this.btnLuuCapNhatBanAn.BackColor = System.Drawing.Color.Lime;
+            this.btnLuuCapNhatBanAn.BackColor = System.Drawing.Color.White;
             this.btnLuuCapNhatBanAn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuCapNhatBanAn.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconLuu;
+            this.btnLuuCapNhatBanAn.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconfinder_Save_278762;
             this.btnLuuCapNhatBanAn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuCapNhatBanAn.Location = new System.Drawing.Point(607, 325);
+            this.btnLuuCapNhatBanAn.Location = new System.Drawing.Point(451, 100);
             this.btnLuuCapNhatBanAn.Name = "btnLuuCapNhatBanAn";
             this.btnLuuCapNhatBanAn.Size = new System.Drawing.Size(85, 40);
             this.btnLuuCapNhatBanAn.TabIndex = 59;
@@ -148,14 +148,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(746, 192);
+            this.textBox1.Location = new System.Drawing.Point(291, 130);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 66;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(746, 252);
+            this.textBox2.Location = new System.Drawing.Point(291, 172);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 67;
@@ -164,7 +164,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 541);
+            this.BackgroundImage = global::PhanMemQuanLyKhachSan.Properties.Resources.b13;
+            this.ClientSize = new System.Drawing.Size(817, 430);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);

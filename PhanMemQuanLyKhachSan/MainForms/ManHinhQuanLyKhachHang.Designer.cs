@@ -36,7 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -44,6 +43,7 @@
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btReset = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLyKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,11 +65,12 @@
             this.dgvQuanLyKhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvQuanLyKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvQuanLyKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvQuanLyKhachHang.Location = new System.Drawing.Point(151, 237);
+            this.dgvQuanLyKhachHang.Location = new System.Drawing.Point(142, 237);
             this.dgvQuanLyKhachHang.Name = "dgvQuanLyKhachHang";
             this.dgvQuanLyKhachHang.RowHeadersVisible = false;
+            this.dgvQuanLyKhachHang.RowHeadersWidth = 51;
             this.dgvQuanLyKhachHang.RowTemplate.Height = 24;
-            this.dgvQuanLyKhachHang.Size = new System.Drawing.Size(773, 399);
+            this.dgvQuanLyKhachHang.Size = new System.Drawing.Size(773, 304);
             this.dgvQuanLyKhachHang.TabIndex = 9;
             // 
             // btnTroVeCuaQLKH
@@ -92,7 +93,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(249, 86);
+            this.label1.Location = new System.Drawing.Point(194, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 22);
             this.label1.TabIndex = 10;
@@ -103,7 +104,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(249, 137);
+            this.label2.Location = new System.Drawing.Point(194, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 22);
             this.label2.TabIndex = 11;
@@ -125,38 +126,31 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(597, 137);
+            this.label4.Location = new System.Drawing.Point(597, 138);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 22);
+            this.label4.Size = new System.Drawing.Size(40, 22);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Số điện thoại";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(379, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(124, 22);
-            this.textBox1.TabIndex = 14;
+            this.label4.Text = "SĐT";
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(379, 140);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(124, 22);
+            this.textBox2.Size = new System.Drawing.Size(166, 22);
             this.textBox2.TabIndex = 15;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(712, 140);
+            this.textBox3.Location = new System.Drawing.Point(699, 140);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(124, 22);
+            this.textBox3.Size = new System.Drawing.Size(180, 22);
             this.textBox3.TabIndex = 17;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(712, 86);
+            this.textBox4.Location = new System.Drawing.Point(699, 86);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(124, 22);
+            this.textBox4.Size = new System.Drawing.Size(180, 22);
             this.textBox4.TabIndex = 16;
             // 
             // btThem
@@ -211,13 +205,24 @@
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox1.Location = new System.Drawing.Point(379, 93);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(166, 22);
+            this.textBox1.TabIndex = 22;
+            this.textBox1.UseSystemPasswordChar = true;
+            // 
             // frmQuanLyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PhanMemQuanLyKhachSan.Properties.Resources.b18;
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackgroundImage = global::PhanMemQuanLyKhachSan.Properties.Resources.b132;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1018, 648);
+            this.ClientSize = new System.Drawing.Size(1018, 572);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btReset);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btSua);
@@ -225,7 +230,6 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -252,7 +256,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
@@ -260,5 +263,6 @@
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btReset;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

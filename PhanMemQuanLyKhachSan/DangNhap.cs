@@ -29,7 +29,7 @@ namespace PhanMemQuanLyKhachSan
 
                 string taiKhoan = txtTenDangNhap.Text;
                 string matKhau = txtMatKhau.Text;
-                string sql = "select * from DANGNHAP where TaiKhoan = '" + taiKhoan + "' and MatKhau = '" + matKhau + "'";
+                string sql = "select * from DANGNHAP where Taikhoan = '" + taiKhoan + "' and Matkhau = '" + matKhau + "'";
 
                 SqlCommand cmd = new SqlCommand(sql, connection);
 
@@ -50,6 +50,18 @@ namespace PhanMemQuanLyKhachSan
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
     
 }

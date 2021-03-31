@@ -43,9 +43,10 @@
             // 
             this.btnCapNhatThucPham.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnCapNhatThucPham.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatThucPham.Location = new System.Drawing.Point(12, 139);
+            this.btnCapNhatThucPham.Location = new System.Drawing.Point(16, 171);
+            this.btnCapNhatThucPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCapNhatThucPham.Name = "btnCapNhatThucPham";
-            this.btnCapNhatThucPham.Size = new System.Drawing.Size(205, 50);
+            this.btnCapNhatThucPham.Size = new System.Drawing.Size(273, 62);
             this.btnCapNhatThucPham.TabIndex = 0;
             this.btnCapNhatThucPham.Text = "Cập Nhật Thực Phẩm";
             this.btnCapNhatThucPham.UseVisualStyleBackColor = false;
@@ -55,9 +56,10 @@
             // 
             this.btnCapNhatMonAn.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnCapNhatMonAn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatMonAn.Location = new System.Drawing.Point(12, 234);
+            this.btnCapNhatMonAn.Location = new System.Drawing.Point(16, 288);
+            this.btnCapNhatMonAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCapNhatMonAn.Name = "btnCapNhatMonAn";
-            this.btnCapNhatMonAn.Size = new System.Drawing.Size(205, 51);
+            this.btnCapNhatMonAn.Size = new System.Drawing.Size(273, 63);
             this.btnCapNhatMonAn.TabIndex = 1;
             this.btnCapNhatMonAn.Text = "Cập Nhật Món Ăn";
             this.btnCapNhatMonAn.UseVisualStyleBackColor = false;
@@ -67,9 +69,10 @@
             // 
             this.btnCapNhatBanAn.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnCapNhatBanAn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatBanAn.Location = new System.Drawing.Point(12, 330);
+            this.btnCapNhatBanAn.Location = new System.Drawing.Point(16, 406);
+            this.btnCapNhatBanAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCapNhatBanAn.Name = "btnCapNhatBanAn";
-            this.btnCapNhatBanAn.Size = new System.Drawing.Size(205, 49);
+            this.btnCapNhatBanAn.Size = new System.Drawing.Size(273, 60);
             this.btnCapNhatBanAn.TabIndex = 2;
             this.btnCapNhatBanAn.Text = "Cập Nhật Bàn Ăn";
             this.btnCapNhatBanAn.UseVisualStyleBackColor = false;
@@ -79,9 +82,10 @@
             // 
             this.lblQuanLyPhong.BackColor = System.Drawing.Color.Transparent;
             this.lblQuanLyPhong.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuanLyPhong.Location = new System.Drawing.Point(475, 9);
+            this.lblQuanLyPhong.Location = new System.Drawing.Point(633, 11);
+            this.lblQuanLyPhong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuanLyPhong.Name = "lblQuanLyPhong";
-            this.lblQuanLyPhong.Size = new System.Drawing.Size(338, 42);
+            this.lblQuanLyPhong.Size = new System.Drawing.Size(451, 52);
             this.lblQuanLyPhong.TabIndex = 3;
             this.lblQuanLyPhong.Text = "Quản Lý Nhà Hàng";
             this.lblQuanLyPhong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,9 +96,10 @@
             this.btnTroVeCuaCTPP.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTroVeCuaCTPP.Image = global::PhanMemQuanLyKhachSan.Properties.Resources.iconBack;
             this.btnTroVeCuaCTPP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTroVeCuaCTPP.Location = new System.Drawing.Point(12, 9);
+            this.btnTroVeCuaCTPP.Location = new System.Drawing.Point(16, 11);
+            this.btnTroVeCuaCTPP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTroVeCuaCTPP.Name = "btnTroVeCuaCTPP";
-            this.btnTroVeCuaCTPP.Size = new System.Drawing.Size(95, 36);
+            this.btnTroVeCuaCTPP.Size = new System.Drawing.Size(127, 44);
             this.btnTroVeCuaCTPP.TabIndex = 5;
             this.btnTroVeCuaCTPP.Text = "Trở về";
             this.btnTroVeCuaCTPP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -109,9 +114,10 @@
             // 
             this.btQuanLyNhaCungCap.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btQuanLyNhaCungCap.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btQuanLyNhaCungCap.Location = new System.Drawing.Point(12, 425);
+            this.btQuanLyNhaCungCap.Location = new System.Drawing.Point(16, 523);
+            this.btQuanLyNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btQuanLyNhaCungCap.Name = "btQuanLyNhaCungCap";
-            this.btQuanLyNhaCungCap.Size = new System.Drawing.Size(205, 49);
+            this.btQuanLyNhaCungCap.Size = new System.Drawing.Size(273, 60);
             this.btQuanLyNhaCungCap.TabIndex = 6;
             this.btQuanLyNhaCungCap.Text = "Cập Nhật Nhà Cung Cấp";
             this.btQuanLyNhaCungCap.UseVisualStyleBackColor = false;
@@ -119,19 +125,20 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(239, 95);
+            this.panel1.Location = new System.Drawing.Point(319, 117);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(856, 436);
+            this.panel1.Size = new System.Drawing.Size(1049, 537);
             this.panel1.TabIndex = 7;
             // 
             // frmQuanLyNhaHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::PhanMemQuanLyKhachSan.Properties.Resources.b1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1131, 562);
+            this.ClientSize = new System.Drawing.Size(1403, 687);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btQuanLyNhaCungCap);
             this.Controls.Add(this.btnTroVeCuaCTPP);
@@ -139,6 +146,7 @@
             this.Controls.Add(this.btnCapNhatBanAn);
             this.Controls.Add(this.btnCapNhatMonAn);
             this.Controls.Add(this.btnCapNhatThucPham);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmQuanLyNhaHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Màn Hình Quản Lý Phòng";

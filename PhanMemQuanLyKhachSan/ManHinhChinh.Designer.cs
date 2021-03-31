@@ -158,6 +158,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msManhinhchinh.SuspendLayout();
             this.pnlHientrang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -207,11 +208,12 @@
             this.quảnLýNhânViênToolStripMenuItem,
             this.quảnLýKháchHàngToolStripMenuItem,
             this.Hoadon,
-            this.liênHệToolStripMenuItem});
+            this.liênHệToolStripMenuItem,
+            this.thoátToolStripMenuItem});
             this.msManhinhchinh.Location = new System.Drawing.Point(1, 49);
             this.msManhinhchinh.Name = "msManhinhchinh";
             this.msManhinhchinh.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.msManhinhchinh.Size = new System.Drawing.Size(959, 32);
+            this.msManhinhchinh.Size = new System.Drawing.Size(1029, 32);
             this.msManhinhchinh.TabIndex = 1;
             this.msManhinhchinh.Text = "menuStrip1";
             // 
@@ -1808,6 +1810,13 @@
             this.label3.Text = "Loại bàn : Tròn";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // thoátToolStripMenuItem
+            // 
+            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(70, 28);
+            this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
+            // 
             // frmManHinhChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1982,5 +1991,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
     }
 }

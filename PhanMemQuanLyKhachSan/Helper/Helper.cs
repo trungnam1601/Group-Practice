@@ -10,7 +10,7 @@ namespace PhanMemQuanLyKhachSan.Helper
     {
         //Datasourse (khac nhau)
         //DN: ADMIN\SQLEXPRESS
-        public const string dataSource = @"Data Source=DESKTOP-62LKBUM;Initial Catalog=QuanLyNhaHang;Integrated Security=True";
+        public const string dataSource = @"Data Source=ADMIN;Initial Catalog=QuanLyNhaHang;Integrated Security=True";
 
        
     }

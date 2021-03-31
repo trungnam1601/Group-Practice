@@ -7,7 +7,7 @@ namespace PhanMemQuanLyKhachSan.Model
     using System.Data.Entity.Spatial;
     using System.Linq;
 
-    [Table("MatKhau")]
+    [Table("PASS")]
     public partial class MatKhau
     {
         [Key]

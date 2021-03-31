@@ -323,6 +323,18 @@
     <None Include="Resources\iconfinder_Save_278762.png" />
     <None Include="Resources\iconfinder_Remove_278742.png" />
     <None Include="Resources\iconfinder_Synchronize_278832.png" />
+    <None Include="Resources\iconfinder_Zoom In_278881.png" />
+    <None Include="Resources\iconfinder_Zoom In_278882.png" />
+    <None Include="Resources\iconfinder_Save_2787621.png" />
+    <None Include="Resources\iconfinder_Stock Index Up_2788121.png" />
+    <None Include="Resources\iconfinder_Remove_2787421.png" />
+    <None Include="Resources\iconfinder_Remove_2787422.png" />
+    <None Include="Resources\iconfinder_Synchronize_2788321.png" />
+    <None Include="Resources\iconfinder_Stock Index Up_2788122.png" />
+    <None Include="Resources\iconfinder_Remove_2787423.png" />
+    <None Include="Resources\iconfinder_Remove_2787424.png" />
+    <None Include="Resources\iconfinder_Save_2787622.png" />
+    <None Include="Resources\iconfinder_Save_2787623.png" />
     <Content Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

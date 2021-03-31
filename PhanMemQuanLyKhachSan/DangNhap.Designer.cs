@@ -32,13 +32,11 @@
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
-            this.lblChuaCoTaiKhoan = new System.Windows.Forms.Label();
-            this.btnDangKy = new System.Windows.Forms.Button();
+            this.pnlTenDangNhap = new System.Windows.Forms.Panel();
+            this.pnlMatKhau = new System.Windows.Forms.Panel();
             this.btnHienMatKhau = new System.Windows.Forms.Button();
             this.picMatKhau = new System.Windows.Forms.PictureBox();
             this.picTenDangNhap = new System.Windows.Forms.PictureBox();
-            this.pnlTenDangNhap = new System.Windows.Forms.Panel();
-            this.pnlMatKhau = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picMatKhau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTenDangNhap)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +54,7 @@
             this.lblDangNhap.TabIndex = 0;
             this.lblDangNhap.Text = "Đăng nhập";
             this.lblDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDangNhap.Click += new System.EventHandler(this.lblDangNhap_Click);
             // 
             // txtTenDangNhap
             // 
@@ -97,29 +96,25 @@
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
-            // lblChuaCoTaiKhoan
+            // pnlTenDangNhap
             // 
-            this.lblChuaCoTaiKhoan.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChuaCoTaiKhoan.ForeColor = System.Drawing.Color.Lime;
-            this.lblChuaCoTaiKhoan.Location = new System.Drawing.Point(65, 335);
-            this.lblChuaCoTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblChuaCoTaiKhoan.Name = "lblChuaCoTaiKhoan";
-            this.lblChuaCoTaiKhoan.Size = new System.Drawing.Size(238, 27);
-            this.lblChuaCoTaiKhoan.TabIndex = 10;
-            this.lblChuaCoTaiKhoan.Text = "Bạn chưa có tài khoản?";
-            this.lblChuaCoTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pnlTenDangNhap.BackColor = System.Drawing.Color.Black;
+            this.pnlTenDangNhap.ForeColor = System.Drawing.Color.Peru;
+            this.pnlTenDangNhap.Location = new System.Drawing.Point(69, 124);
+            this.pnlTenDangNhap.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTenDangNhap.Name = "pnlTenDangNhap";
+            this.pnlTenDangNhap.Size = new System.Drawing.Size(281, 2);
+            this.pnlTenDangNhap.TabIndex = 2;
             // 
-            // btnDangKy
+            // pnlMatKhau
             // 
-            this.btnDangKy.BackColor = System.Drawing.Color.Lime;
-            this.btnDangKy.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangKy.Location = new System.Drawing.Point(100, 377);
-            this.btnDangKy.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDangKy.Name = "btnDangKy";
-            this.btnDangKy.Size = new System.Drawing.Size(166, 37);
-            this.btnDangKy.TabIndex = 11;
-            this.btnDangKy.Text = "Đăng ký";
-            this.btnDangKy.UseVisualStyleBackColor = false;
+            this.pnlMatKhau.BackColor = System.Drawing.Color.Black;
+            this.pnlMatKhau.ForeColor = System.Drawing.Color.Peru;
+            this.pnlMatKhau.Location = new System.Drawing.Point(69, 185);
+            this.pnlMatKhau.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlMatKhau.Name = "pnlMatKhau";
+            this.pnlMatKhau.Size = new System.Drawing.Size(281, 2);
+            this.pnlMatKhau.TabIndex = 12;
             // 
             // btnHienMatKhau
             // 
@@ -127,7 +122,7 @@
             this.btnHienMatKhau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnHienMatKhau.FlatAppearance.BorderSize = 0;
             this.btnHienMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHienMatKhau.Location = new System.Drawing.Point(325, 167);
+            this.btnHienMatKhau.Location = new System.Drawing.Point(323, 160);
             this.btnHienMatKhau.Margin = new System.Windows.Forms.Padding(2);
             this.btnHienMatKhau.Name = "btnHienMatKhau";
             this.btnHienMatKhau.Size = new System.Drawing.Size(26, 17);
@@ -156,36 +151,13 @@
             this.picTenDangNhap.TabIndex = 3;
             this.picTenDangNhap.TabStop = false;
             // 
-            // pnlTenDangNhap
-            // 
-            this.pnlTenDangNhap.BackColor = System.Drawing.Color.Black;
-            this.pnlTenDangNhap.ForeColor = System.Drawing.Color.Peru;
-            this.pnlTenDangNhap.Location = new System.Drawing.Point(69, 124);
-            this.pnlTenDangNhap.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlTenDangNhap.Name = "pnlTenDangNhap";
-            this.pnlTenDangNhap.Size = new System.Drawing.Size(281, 2);
-            this.pnlTenDangNhap.TabIndex = 2;
-            // 
-            // pnlMatKhau
-            // 
-            this.pnlMatKhau.BackColor = System.Drawing.Color.Black;
-            this.pnlMatKhau.ForeColor = System.Drawing.Color.Peru;
-            this.pnlMatKhau.Location = new System.Drawing.Point(69, 185);
-            this.pnlMatKhau.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlMatKhau.Name = "pnlMatKhau";
-            this.pnlMatKhau.Size = new System.Drawing.Size(281, 2);
-            this.pnlMatKhau.TabIndex = 12;
-            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::PhanMemQuanLyKhachSan.Properties.Resources._26c5567ca5d23690c87b00d0b227f306;
             this.ClientSize = new System.Drawing.Size(365, 443);
             this.Controls.Add(this.pnlMatKhau);
-            this.Controls.Add(this.btnDangKy);
-            this.Controls.Add(this.lblChuaCoTaiKhoan);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.btnHienMatKhau);
             this.Controls.Add(this.picMatKhau);
@@ -199,6 +171,7 @@
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
+            this.Load += new System.EventHandler(this.frmDangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picMatKhau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTenDangNhap)).EndInit();
             this.ResumeLayout(false);
@@ -215,8 +188,6 @@
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Button btnHienMatKhau;
         private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.Label lblChuaCoTaiKhoan;
-        private System.Windows.Forms.Button btnDangKy;
         private System.Windows.Forms.Panel pnlTenDangNhap;
         private System.Windows.Forms.Panel pnlMatKhau;
     }

@@ -19,5 +19,9 @@ namespace PhanMemQuanLyKhachSan
             InitializeComponent();
         }
 
+        private void btnThemNV_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

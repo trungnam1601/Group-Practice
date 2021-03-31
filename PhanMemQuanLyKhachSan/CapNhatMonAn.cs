@@ -22,5 +22,6 @@ namespace PhanMemQuanLyKhachSan
         {
             this.Close();
         }
+
     }
 }
