@@ -45,42 +45,37 @@ namespace QuanLyNhaHang
         private void btnThemMonAn_Click(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            SqlDataAdapter aa = new SqlDataAdapter("PROC_INSERT_MONAN", connection);
             try
             {
                 connection.Open();
-                string MaTP = textMTP.Text;
-                string TenTP = textTTP.Text;
-                string DVT = textDVT.Text;
-                string GB = textGB.Text;
-                string MaNMA = textMNMA.Text;
-                string TT = textTT.Text;
-                string sql = "";
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                SqlDataReader dta = cmd.ExecuteReader();
-
+                aa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                aa.SelectCommand.Parameters.Add("@MAMA", SqlDbType.VarChar, (10)).Value = textMTP.Text;
+                aa.SelectCommand.Parameters.Add("@TENMA", SqlDbType.NVarChar, (50)).Value = textTTP.Text;
+                aa.SelectCommand.Parameters.Add("@DVT", SqlDbType.NVarChar, (10)).Value = textDVT.Text;
+                aa.SelectCommand.Parameters.Add("@GIABAN", SqlDbType.Int).Value = textGB.Text;
+                aa.SelectCommand.Parameters.Add("@MANHOMMA", SqlDbType.VarChar, (10)).Value = textMNMA.Text;
+                aa.SelectCommand.Parameters.Add("@TRANGTHAIMONAN", SqlDbType.NVarChar, (50)).Value = textTT.Text;
+                aa.SelectCommand.ExecuteNonQuery();
+                connection.Close();
+                //SqlDataReader dta = cmd.ExecuteReader();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        
-    }
-
+        }
         private void btnXoaMonAn_Click(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            SqlDataAdapter aa = new SqlDataAdapter("PROC_DELETE_MONAN", connection);
             try
             {
                 connection.Open();
-                string MaTP = textMTP.Text;
-                string TenTP = textTTP.Text;
-                string DVT = textDVT.Text;
-                string GB = textGB.Text;
-                string MaNMA = textMNMA.Text;
-                string TT = textTT.Text;
-                string sql = "";
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                SqlDataReader dta = cmd.ExecuteReader();
+                aa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                aa.SelectCommand.Parameters.Add("@MAMA", SqlDbType.VarChar, (10)).Value = textMTP.Text;
+                aa.SelectCommand.ExecuteNonQuery();
+                connection.Close();
             }
             catch (Exception ex)
             {
