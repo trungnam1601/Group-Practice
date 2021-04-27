@@ -10,7 +10,7 @@ namespace QuanLyNhaHang.Helper
     {
         //Datasourse (khac nhau)
         //DN: ADMIN\SQLEXPRESS
-        public const string dataSource = @"Data Source=ADMIN;Initial Catalog=QuanLyNhaHang;Integrated Security=True";
+        public const string dataSource = @"Data Source=.\SQLEXPRESS;Initial Catalog=QL_NHAHANG;Integrated Security=True";
 
        
     }
