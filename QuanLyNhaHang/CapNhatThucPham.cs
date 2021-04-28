@@ -86,5 +86,10 @@ namespace QuanLyNhaHang
         {
             dgvCapNhatThucPham.DataSource = GetThucPham().Tables[0];
         }
+
+        private void dgvCapNhatThucPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

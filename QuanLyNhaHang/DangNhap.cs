@@ -29,7 +29,7 @@ namespace QuanLyNhaHang
 
                 string taiKhoan = txtTenDangNhap.Text;
                 string matKhau = txtMatKhau.Text;
-                string sql = "select * from DANGNHAP where Taikhoan = '" + taiKhoan + "' and Matkhau = '" + matKhau + "'";
+                string sql = "select * from ACC where USERNAME = '" + taiKhoan + "' and PASS = '" + matKhau + "'";
 
                 SqlCommand cmd = new SqlCommand(sql, connection);
 

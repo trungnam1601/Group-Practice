@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblQuanLyKhachHang = new System.Windows.Forms.Label();
             this.dgvQuanLyKhachHang = new System.Windows.Forms.DataGridView();
             this.btnTroVeCuaQLKH = new System.Windows.Forms.Button();
@@ -61,8 +61,8 @@
             // 
             // dgvQuanLyKhachHang
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvQuanLyKhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvQuanLyKhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvQuanLyKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvQuanLyKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvQuanLyKhachHang.Location = new System.Drawing.Point(197, 237);
@@ -100,6 +100,7 @@
             this.btThem.TabIndex = 18;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = false;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btSua
             // 
@@ -113,6 +114,7 @@
             this.btSua.TabIndex = 19;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = false;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btXoa
             // 
@@ -126,6 +128,7 @@
             this.btXoa.TabIndex = 20;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = false;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btReset
             // 
@@ -137,8 +140,9 @@
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(95, 30);
             this.btReset.TabIndex = 21;
-            this.btReset.Text = "Reset";
+            this.btReset.Text = "Lưu";
             this.btReset.UseVisualStyleBackColor = false;
+            this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // txtMaKh
             // 
@@ -147,7 +151,7 @@
             this.txtMaKh.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtMaKh.Location = new System.Drawing.Point(379, 85);
             this.txtMaKh.Name = "txtMaKh";
-            this.txtMaKh.Size = new System.Drawing.Size(166, 24);
+            this.txtMaKh.Size = new System.Drawing.Size(166, 29);
             this.txtMaKh.TabIndex = 22;
             // 
             // txtDiaChi
@@ -157,7 +161,7 @@
             this.txtDiaChi.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtDiaChi.Location = new System.Drawing.Point(699, 85);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(166, 24);
+            this.txtDiaChi.Size = new System.Drawing.Size(166, 29);
             this.txtDiaChi.TabIndex = 23;
             // 
             // txtTenKh
@@ -167,7 +171,7 @@
             this.txtTenKh.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtTenKh.Location = new System.Drawing.Point(379, 137);
             this.txtTenKh.Name = "txtTenKh";
-            this.txtTenKh.Size = new System.Drawing.Size(166, 24);
+            this.txtTenKh.Size = new System.Drawing.Size(166, 29);
             this.txtTenKh.TabIndex = 25;
             // 
             // txtPhone
@@ -177,7 +181,7 @@
             this.txtPhone.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtPhone.Location = new System.Drawing.Point(699, 138);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(166, 24);
+            this.txtPhone.Size = new System.Drawing.Size(166, 29);
             this.txtPhone.TabIndex = 26;
             // 
             // lblMaNv
@@ -187,7 +191,7 @@
             this.lblMaNv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblMaNv.Location = new System.Drawing.Point(194, 85);
             this.lblMaNv.Name = "lblMaNv";
-            this.lblMaNv.Size = new System.Drawing.Size(109, 18);
+            this.lblMaNv.Size = new System.Drawing.Size(140, 24);
             this.lblMaNv.TabIndex = 30;
             this.lblMaNv.Text = "Mã khách hàng";
             // 
@@ -198,7 +202,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(194, 137);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 18);
+            this.label1.Size = new System.Drawing.Size(148, 24);
             this.label1.TabIndex = 31;
             this.label1.Text = "Tên khách hàng";
             // 
@@ -209,7 +213,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.Location = new System.Drawing.Point(598, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 18);
+            this.label2.Size = new System.Drawing.Size(67, 24);
             this.label2.TabIndex = 32;
             this.label2.Text = "Địa chỉ";
             // 
@@ -220,13 +224,13 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.Location = new System.Drawing.Point(602, 141);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 18);
+            this.label3.Size = new System.Drawing.Size(47, 24);
             this.label3.TabIndex = 33;
             this.label3.Text = "SĐT";
             // 
             // frmQuanLyKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = global::QuanLyNhaHang.Properties.Resources.b13;
@@ -251,6 +255,7 @@
             this.Name = "frmQuanLyKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Màn Hình Quản Lý Khách Hàng";
+            this.Load += new System.EventHandler(this.frmQuanLyKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLyKhachHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
