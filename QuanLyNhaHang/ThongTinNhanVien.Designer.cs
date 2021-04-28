@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtLuong = new System.Windows.Forms.TextBox();
             this.txtTenNV = new System.Windows.Forms.TextBox();
-            this.txtMaNv = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvThongTinNhanVien = new System.Windows.Forms.DataGridView();
             this.btnSuaNV = new System.Windows.Forms.Button();
             this.btnXoaNV = new System.Windows.Forms.Button();
             this.btnLuuNV = new System.Windows.Forms.Button();
@@ -52,7 +52,7 @@
             this.cbxGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtMaBP = new System.Windows.Forms.TextBox();
             this.txtMaCN = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThemNV
@@ -68,7 +68,7 @@
             this.btnThemNV.Text = "Thêm";
             this.btnThemNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemNV.UseVisualStyleBackColor = false;
-            
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // btnBackTTNV
             // 
@@ -110,12 +110,12 @@
             this.txtTenNV.Size = new System.Drawing.Size(94, 20);
             this.txtTenNV.TabIndex = 26;
             // 
-            // txtMaNv
+            // txtMaNV
             // 
-            this.txtMaNv.Location = new System.Drawing.Point(189, 72);
-            this.txtMaNv.Name = "txtMaNv";
-            this.txtMaNv.Size = new System.Drawing.Size(94, 20);
-            this.txtMaNv.TabIndex = 25;
+            this.txtMaNV.Location = new System.Drawing.Point(189, 72);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(94, 20);
+            this.txtMaNV.TabIndex = 25;
             // 
             // label4
             // 
@@ -212,13 +212,14 @@
             this.label9.TabIndex = 29;
             this.label9.Text = "Giới Tính";
             // 
-            // dataGridView1
+            // dtgvThongTinNhanVien
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(52, 224);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(718, 157);
-            this.dataGridView1.TabIndex = 37;
+            this.dtgvThongTinNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvThongTinNhanVien.Location = new System.Drawing.Point(52, 224);
+            this.dtgvThongTinNhanVien.Name = "dtgvThongTinNhanVien";
+            this.dtgvThongTinNhanVien.Size = new System.Drawing.Size(718, 172);
+            this.dtgvThongTinNhanVien.TabIndex = 37;
+            this.dtgvThongTinNhanVien.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvThongTinNhanVien_CellMouseClick);
             // 
             // btnSuaNV
             // 
@@ -233,6 +234,7 @@
             this.btnSuaNV.Text = "Sửa";
             this.btnSuaNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaNV.UseVisualStyleBackColor = false;
+            this.btnSuaNV.Click += new System.EventHandler(this.btnSuaNV_Click);
             // 
             // btnXoaNV
             // 
@@ -247,6 +249,7 @@
             this.btnXoaNV.Text = "Xóa";
             this.btnXoaNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaNV.UseVisualStyleBackColor = false;
+            this.btnXoaNV.Click += new System.EventHandler(this.btnXoaNV_Click);
             // 
             // btnLuuNV
             // 
@@ -321,7 +324,7 @@
             this.Controls.Add(this.txtMaBP);
             this.Controls.Add(this.cbxGioiTinh);
             this.Controls.Add(this.dateNgaySinh);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvThongTinNhanVien);
             this.Controls.Add(this.txtDiachi);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -329,7 +332,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtLuong);
             this.Controls.Add(this.txtTenNV);
-            this.Controls.Add(this.txtMaNv);
+            this.Controls.Add(this.txtMaNV);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -345,7 +348,7 @@
             this.Name = "frmCapNhatThongTinNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Thông Tin Nhân Viên";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinNhanVien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,7 +364,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtLuong;
         private System.Windows.Forms.TextBox txtTenNV;
-        private System.Windows.Forms.TextBox txtMaNv;
+        private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -371,7 +374,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvThongTinNhanVien;
         private System.Windows.Forms.DateTimePicker dateNgaySinh;
         private System.Windows.Forms.ComboBox cbxGioiTinh;
         private System.Windows.Forms.TextBox txtMaBP;

@@ -102,6 +102,7 @@ namespace QuanLyNhaHang
             this.dgvCapNhatBoPhanNV.RowHeadersWidth = 51;
             this.dgvCapNhatBoPhanNV.Size = new System.Drawing.Size(520, 161);
             this.dgvCapNhatBoPhanNV.TabIndex = 37;
+            this.dgvCapNhatBoPhanNV.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCapNhatBoPhanNV_CellMouseClick);
             // 
             // btnSuaBoPhan
             // 
@@ -116,6 +117,7 @@ namespace QuanLyNhaHang
             this.btnSuaBoPhan.Text = "Sửa ";
             this.btnSuaBoPhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaBoPhan.UseVisualStyleBackColor = false;
+            this.btnSuaBoPhan.Click += new System.EventHandler(this.btnSuaBoPhan_Click);
             // 
             // btnXoaBoPhan
             // 
@@ -130,6 +132,7 @@ namespace QuanLyNhaHang
             this.btnXoaBoPhan.Text = "Xóa ";
             this.btnXoaBoPhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaBoPhan.UseVisualStyleBackColor = false;
+            this.btnXoaBoPhan.Click += new System.EventHandler(this.btnXoaBoPhan_Click);
             // 
             // btnThemBoPhan
             // 
@@ -144,6 +147,7 @@ namespace QuanLyNhaHang
             this.btnThemBoPhan.Text = "Thêm ";
             this.btnThemBoPhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemBoPhan.UseVisualStyleBackColor = false;
+            this.btnThemBoPhan.Click += new System.EventHandler(this.btnThemBoPhan_Click);
             // 
             // lblChiNhanh
             // 
