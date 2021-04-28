@@ -30,17 +30,17 @@ namespace QuanLyNhaHang
         private void InitializeComponent()
         {
             this.btResetBoPhan = new System.Windows.Forms.Button();
-            this.txtTenBP = new System.Windows.Forms.TextBox();
-            this.txtMaBP = new System.Windows.Forms.TextBox();
+            this.tb_tenBP = new System.Windows.Forms.TextBox();
+            this.tb_maBP = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dgvCapNhatBoPhanNV = new System.Windows.Forms.DataGridView();
+            this.dtgvCapNhatBoPhanNV = new System.Windows.Forms.DataGridView();
             this.btnSuaBoPhan = new System.Windows.Forms.Button();
             this.btnXoaBoPhan = new System.Windows.Forms.Button();
             this.btnThemBoPhan = new System.Windows.Forms.Button();
             this.lblChiNhanh = new System.Windows.Forms.Label();
             this.btnTroVeBPNV = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatBoPhanNV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCapNhatBoPhanNV)).BeginInit();
             this.SuspendLayout();
             // 
             // btResetBoPhan
@@ -56,20 +56,21 @@ namespace QuanLyNhaHang
             this.btResetBoPhan.Text = "Reset";
             this.btResetBoPhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btResetBoPhan.UseVisualStyleBackColor = false;
+            this.btResetBoPhan.Click += new System.EventHandler(this.btResetBoPhan_Click);
             // 
-            // txtTenBP
+            // tb_tenBP
             // 
-            this.txtTenBP.Location = new System.Drawing.Point(273, 167);
-            this.txtTenBP.Name = "txtTenBP";
-            this.txtTenBP.Size = new System.Drawing.Size(121, 20);
-            this.txtTenBP.TabIndex = 41;
+            this.tb_tenBP.Location = new System.Drawing.Point(273, 167);
+            this.tb_tenBP.Name = "tb_tenBP";
+            this.tb_tenBP.Size = new System.Drawing.Size(121, 20);
+            this.tb_tenBP.TabIndex = 41;
             // 
-            // txtMaBP
+            // tb_maBP
             // 
-            this.txtMaBP.Location = new System.Drawing.Point(273, 110);
-            this.txtMaBP.Name = "txtMaBP";
-            this.txtMaBP.Size = new System.Drawing.Size(121, 20);
-            this.txtMaBP.TabIndex = 40;
+            this.tb_maBP.Location = new System.Drawing.Point(273, 110);
+            this.tb_maBP.Name = "tb_maBP";
+            this.tb_maBP.Size = new System.Drawing.Size(121, 20);
+            this.tb_maBP.TabIndex = 40;
             // 
             // label2
             // 
@@ -93,15 +94,15 @@ namespace QuanLyNhaHang
             this.label5.TabIndex = 38;
             this.label5.Text = "Mã Bộ Phận";
             // 
-            // dgvCapNhatBoPhanNV
+            // dtgvCapNhatBoPhanNV
             // 
-            this.dgvCapNhatBoPhanNV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCapNhatBoPhanNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCapNhatBoPhanNV.Location = new System.Drawing.Point(154, 221);
-            this.dgvCapNhatBoPhanNV.Name = "dgvCapNhatBoPhanNV";
-            this.dgvCapNhatBoPhanNV.RowHeadersWidth = 51;
-            this.dgvCapNhatBoPhanNV.Size = new System.Drawing.Size(520, 161);
-            this.dgvCapNhatBoPhanNV.TabIndex = 37;
+            this.dtgvCapNhatBoPhanNV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvCapNhatBoPhanNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvCapNhatBoPhanNV.Location = new System.Drawing.Point(154, 221);
+            this.dtgvCapNhatBoPhanNV.Name = "dtgvCapNhatBoPhanNV";
+            this.dtgvCapNhatBoPhanNV.RowHeadersWidth = 51;
+            this.dtgvCapNhatBoPhanNV.Size = new System.Drawing.Size(520, 161);
+            this.dtgvCapNhatBoPhanNV.TabIndex = 37;
             // 
             // btnSuaBoPhan
             // 
@@ -116,6 +117,7 @@ namespace QuanLyNhaHang
             this.btnSuaBoPhan.Text = "Sửa ";
             this.btnSuaBoPhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaBoPhan.UseVisualStyleBackColor = false;
+            this.btnSuaBoPhan.Click += new System.EventHandler(this.btnSuaBoPhan_Click);
             // 
             // btnXoaBoPhan
             // 
@@ -130,6 +132,7 @@ namespace QuanLyNhaHang
             this.btnXoaBoPhan.Text = "Xóa ";
             this.btnXoaBoPhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaBoPhan.UseVisualStyleBackColor = false;
+            this.btnXoaBoPhan.Click += new System.EventHandler(this.btnXoaBoPhan_Click);
             // 
             // btnThemBoPhan
             // 
@@ -144,6 +147,7 @@ namespace QuanLyNhaHang
             this.btnThemBoPhan.Text = "Thêm ";
             this.btnThemBoPhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemBoPhan.UseVisualStyleBackColor = false;
+            this.btnThemBoPhan.Click += new System.EventHandler(this.btnThemBoPhan_Click);
             // 
             // lblChiNhanh
             // 
@@ -180,17 +184,18 @@ namespace QuanLyNhaHang
             this.Controls.Add(this.btnTroVeBPNV);
             this.Controls.Add(this.lblChiNhanh);
             this.Controls.Add(this.btResetBoPhan);
-            this.Controls.Add(this.txtTenBP);
-            this.Controls.Add(this.txtMaBP);
+            this.Controls.Add(this.tb_tenBP);
+            this.Controls.Add(this.tb_maBP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dgvCapNhatBoPhanNV);
+            this.Controls.Add(this.dtgvCapNhatBoPhanNV);
             this.Controls.Add(this.btnSuaBoPhan);
             this.Controls.Add(this.btnXoaBoPhan);
             this.Controls.Add(this.btnThemBoPhan);
             this.Name = "frmCapNhatBoPhanNhanVien";
             this.Text = "Cập Nhật Bộ Phận Nhân Viên";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatBoPhanNV)).EndInit();
+            this.Load += new System.EventHandler(this.frmCapNhatBoPhanNhanVien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCapNhatBoPhanNV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,11 +204,11 @@ namespace QuanLyNhaHang
         #endregion
 
         private System.Windows.Forms.Button btResetBoPhan;
-        private System.Windows.Forms.TextBox txtTenBP;
-        private System.Windows.Forms.TextBox txtMaBP;
+        private System.Windows.Forms.TextBox tb_tenBP;
+        private System.Windows.Forms.TextBox tb_maBP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dgvCapNhatBoPhanNV;
+        private System.Windows.Forms.DataGridView dtgvCapNhatBoPhanNV;
         private System.Windows.Forms.Button btnSuaBoPhan;
         private System.Windows.Forms.Button btnXoaBoPhan;
         private System.Windows.Forms.Button btnThemBoPhan;

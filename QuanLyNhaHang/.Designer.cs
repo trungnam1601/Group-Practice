@@ -34,14 +34,14 @@
             this.txtMaNCC = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dgvCapNhatNhaCungCap = new System.Windows.Forms.DataGridView();
+            this.dtgvCapNhatNhaCungCap = new System.Windows.Forms.DataGridView();
             this.btnSuaCapNhatBanAn = new System.Windows.Forms.Button();
             this.btnLuuCapNhatBanAn = new System.Windows.Forms.Button();
             this.txtTenNCC = new System.Windows.Forms.TextBox();
             this.txtDiachi = new System.Windows.Forms.TextBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatNhaCungCap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCapNhatNhaCungCap)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -109,16 +109,16 @@
             this.label11.TabIndex = 62;
             this.label11.Text = "Mã Nhà Cung Cấp";
             // 
-            // dgvCapNhatNhaCungCap
+            // dtgvCapNhatNhaCungCap
             // 
-            this.dgvCapNhatNhaCungCap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCapNhatNhaCungCap.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgvCapNhatNhaCungCap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCapNhatNhaCungCap.Location = new System.Drawing.Point(132, 225);
-            this.dgvCapNhatNhaCungCap.Name = "dgvCapNhatNhaCungCap";
-            this.dgvCapNhatNhaCungCap.ReadOnly = true;
-            this.dgvCapNhatNhaCungCap.Size = new System.Drawing.Size(535, 132);
-            this.dgvCapNhatNhaCungCap.TabIndex = 61;
+            this.dtgvCapNhatNhaCungCap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvCapNhatNhaCungCap.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dtgvCapNhatNhaCungCap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvCapNhatNhaCungCap.Location = new System.Drawing.Point(132, 225);
+            this.dtgvCapNhatNhaCungCap.Name = "dtgvCapNhatNhaCungCap";
+            this.dtgvCapNhatNhaCungCap.ReadOnly = true;
+            this.dtgvCapNhatNhaCungCap.Size = new System.Drawing.Size(535, 132);
+            this.dtgvCapNhatNhaCungCap.TabIndex = 61;
             // 
             // btnSuaCapNhatBanAn
             // 
@@ -204,7 +204,7 @@
             this.Controls.Add(this.txtMaNCC);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.dgvCapNhatNhaCungCap);
+            this.Controls.Add(this.dtgvCapNhatNhaCungCap);
             this.Controls.Add(this.btnSuaCapNhatBanAn);
             this.Controls.Add(this.btnLuuCapNhatBanAn);
             this.Controls.Add(this.btnTroVeCuaThongKe);
@@ -212,7 +212,8 @@
             this.Name = "frmNhaCungCap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Nhà Cung Cấp";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatNhaCungCap)).EndInit();
+            this.Load += new System.EventHandler(this.frmNhaCungCap_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCapNhatNhaCungCap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,7 +227,7 @@
         private System.Windows.Forms.TextBox txtMaNCC;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridView dgvCapNhatNhaCungCap;
+        private System.Windows.Forms.DataGridView dtgvCapNhatNhaCungCap;
         private System.Windows.Forms.Button btnSuaCapNhatBanAn;
         private System.Windows.Forms.Button btnLuuCapNhatBanAn;
         private System.Windows.Forms.TextBox txtTenNCC;

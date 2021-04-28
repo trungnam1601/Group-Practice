@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblQuanLyKhachHang = new System.Windows.Forms.Label();
-            this.dgvQuanLyKhachHang = new System.Windows.Forms.DataGridView();
+            this.dtgvQuanLyKhachHang = new System.Windows.Forms.DataGridView();
             this.btnTroVeCuaQLKH = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btReset = new System.Windows.Forms.Button();
-            this.txtMaKh = new System.Windows.Forms.TextBox();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.txtTenKh = new System.Windows.Forms.TextBox();
-            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.tb_maKH = new System.Windows.Forms.TextBox();
+            this.tb_diaChi = new System.Windows.Forms.TextBox();
+            this.tb_tenKH = new System.Windows.Forms.TextBox();
+            this.tb_SDT = new System.Windows.Forms.TextBox();
             this.lblMaNv = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLyKhachHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvQuanLyKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // lblQuanLyKhachHang
@@ -59,19 +59,19 @@
             this.lblQuanLyKhachHang.Text = "Quản Lý Khách Hàng";
             this.lblQuanLyKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dgvQuanLyKhachHang
+            // dtgvQuanLyKhachHang
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvQuanLyKhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvQuanLyKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvQuanLyKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvQuanLyKhachHang.Location = new System.Drawing.Point(197, 237);
-            this.dgvQuanLyKhachHang.Name = "dgvQuanLyKhachHang";
-            this.dgvQuanLyKhachHang.RowHeadersVisible = false;
-            this.dgvQuanLyKhachHang.RowHeadersWidth = 51;
-            this.dgvQuanLyKhachHang.RowTemplate.Height = 24;
-            this.dgvQuanLyKhachHang.Size = new System.Drawing.Size(668, 231);
-            this.dgvQuanLyKhachHang.TabIndex = 9;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgvQuanLyKhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dtgvQuanLyKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvQuanLyKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvQuanLyKhachHang.Location = new System.Drawing.Point(197, 237);
+            this.dtgvQuanLyKhachHang.Name = "dtgvQuanLyKhachHang";
+            this.dtgvQuanLyKhachHang.RowHeadersVisible = false;
+            this.dtgvQuanLyKhachHang.RowHeadersWidth = 51;
+            this.dtgvQuanLyKhachHang.RowTemplate.Height = 24;
+            this.dtgvQuanLyKhachHang.Size = new System.Drawing.Size(668, 231);
+            this.dtgvQuanLyKhachHang.TabIndex = 9;
             // 
             // btnTroVeCuaQLKH
             // 
@@ -100,6 +100,7 @@
             this.btThem.TabIndex = 18;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = false;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btSua
             // 
@@ -113,6 +114,7 @@
             this.btSua.TabIndex = 19;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = false;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btXoa
             // 
@@ -126,6 +128,7 @@
             this.btXoa.TabIndex = 20;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = false;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btReset
             // 
@@ -139,46 +142,47 @@
             this.btReset.TabIndex = 21;
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = false;
+            this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
-            // txtMaKh
+            // tb_maKH
             // 
-            this.txtMaKh.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtMaKh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKh.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtMaKh.Location = new System.Drawing.Point(379, 85);
-            this.txtMaKh.Name = "txtMaKh";
-            this.txtMaKh.Size = new System.Drawing.Size(166, 24);
-            this.txtMaKh.TabIndex = 22;
+            this.tb_maKH.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tb_maKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_maKH.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_maKH.Location = new System.Drawing.Point(379, 85);
+            this.tb_maKH.Name = "tb_maKH";
+            this.tb_maKH.Size = new System.Drawing.Size(166, 24);
+            this.tb_maKH.TabIndex = 22;
             // 
-            // txtDiaChi
+            // tb_diaChi
             // 
-            this.txtDiaChi.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtDiaChi.Location = new System.Drawing.Point(699, 85);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(166, 24);
-            this.txtDiaChi.TabIndex = 23;
+            this.tb_diaChi.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tb_diaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_diaChi.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_diaChi.Location = new System.Drawing.Point(699, 85);
+            this.tb_diaChi.Name = "tb_diaChi";
+            this.tb_diaChi.Size = new System.Drawing.Size(166, 24);
+            this.tb_diaChi.TabIndex = 23;
             // 
-            // txtTenKh
+            // tb_tenKH
             // 
-            this.txtTenKh.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtTenKh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenKh.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtTenKh.Location = new System.Drawing.Point(379, 137);
-            this.txtTenKh.Name = "txtTenKh";
-            this.txtTenKh.Size = new System.Drawing.Size(166, 24);
-            this.txtTenKh.TabIndex = 25;
+            this.tb_tenKH.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tb_tenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_tenKH.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_tenKH.Location = new System.Drawing.Point(379, 137);
+            this.tb_tenKH.Name = "tb_tenKH";
+            this.tb_tenKH.Size = new System.Drawing.Size(166, 24);
+            this.tb_tenKH.TabIndex = 25;
             // 
-            // txtPhone
+            // tb_SDT
             // 
-            this.txtPhone.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtPhone.Location = new System.Drawing.Point(699, 138);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(166, 24);
-            this.txtPhone.TabIndex = 26;
+            this.tb_SDT.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tb_SDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_SDT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_SDT.Location = new System.Drawing.Point(699, 138);
+            this.tb_SDT.Name = "tb_SDT";
+            this.tb_SDT.Size = new System.Drawing.Size(166, 24);
+            this.tb_SDT.TabIndex = 26;
             // 
             // lblMaNv
             // 
@@ -236,22 +240,23 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMaNv);
-            this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.txtTenKh);
-            this.Controls.Add(this.txtDiaChi);
-            this.Controls.Add(this.txtMaKh);
+            this.Controls.Add(this.tb_SDT);
+            this.Controls.Add(this.tb_tenKH);
+            this.Controls.Add(this.tb_diaChi);
+            this.Controls.Add(this.tb_maKH);
             this.Controls.Add(this.btReset);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btThem);
-            this.Controls.Add(this.dgvQuanLyKhachHang);
+            this.Controls.Add(this.dtgvQuanLyKhachHang);
             this.Controls.Add(this.btnTroVeCuaQLKH);
             this.Controls.Add(this.lblQuanLyKhachHang);
             this.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmQuanLyKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Màn Hình Quản Lý Khách Hàng";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLyKhachHang)).EndInit();
+            this.Load += new System.EventHandler(this.frmQuanLyKhachHang_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvQuanLyKhachHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,15 +266,15 @@
 
         private System.Windows.Forms.Label lblQuanLyKhachHang;
         private System.Windows.Forms.Button btnTroVeCuaQLKH;
-        private System.Windows.Forms.DataGridView dgvQuanLyKhachHang;
+        private System.Windows.Forms.DataGridView dtgvQuanLyKhachHang;
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btReset;
-        private System.Windows.Forms.TextBox txtMaKh;
-        private System.Windows.Forms.TextBox txtDiaChi;
-        private System.Windows.Forms.TextBox txtTenKh;
-        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox tb_maKH;
+        private System.Windows.Forms.TextBox tb_diaChi;
+        private System.Windows.Forms.TextBox tb_tenKH;
+        private System.Windows.Forms.TextBox tb_SDT;
         private System.Windows.Forms.Label lblMaNv;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

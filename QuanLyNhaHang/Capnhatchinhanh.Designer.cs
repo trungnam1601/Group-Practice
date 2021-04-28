@@ -36,11 +36,11 @@
             this.btnThemChiNhanh = new System.Windows.Forms.Button();
             this.btnTroVeCuaCapNhatLichLamViec = new System.Windows.Forms.Button();
             this.dgvCapNhatChiNhanh = new System.Windows.Forms.DataGridView();
-            this.txtTenCN = new System.Windows.Forms.TextBox();
-            this.txtMaCN = new System.Windows.Forms.TextBox();
+            this.tb_tenChiNhanh = new System.Windows.Forms.TextBox();
+            this.tb_maChiNhanh = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtDiachi = new System.Windows.Forms.TextBox();
+            this.tb_diaChi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatChiNhanh)).BeginInit();
@@ -88,6 +88,7 @@
             this.btnSuaChiNhanh.Text = "Sửa ";
             this.btnSuaChiNhanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaChiNhanh.UseVisualStyleBackColor = false;
+            this.btnSuaChiNhanh.Click += new System.EventHandler(this.btnSuaChiNhanh_Click);
             // 
             // btnXoaChiNhanh
             // 
@@ -102,6 +103,7 @@
             this.btnXoaChiNhanh.Text = "Xóa ";
             this.btnXoaChiNhanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaChiNhanh.UseVisualStyleBackColor = false;
+            this.btnXoaChiNhanh.Click += new System.EventHandler(this.btnXoaChiNhanh_Click);
             // 
             // btnThemChiNhanh
             // 
@@ -116,6 +118,7 @@
             this.btnThemChiNhanh.Text = "Thêm ";
             this.btnThemChiNhanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemChiNhanh.UseVisualStyleBackColor = false;
+            this.btnThemChiNhanh.Click += new System.EventHandler(this.btnThemChiNhanh_Click);
             // 
             // btnTroVeCuaCapNhatLichLamViec
             // 
@@ -142,19 +145,19 @@
             this.dgvCapNhatChiNhanh.Size = new System.Drawing.Size(541, 152);
             this.dgvCapNhatChiNhanh.TabIndex = 16;
             // 
-            // txtTenCN
+            // tb_tenChiNhanh
             // 
-            this.txtTenCN.Location = new System.Drawing.Point(286, 134);
-            this.txtTenCN.Name = "txtTenCN";
-            this.txtTenCN.Size = new System.Drawing.Size(124, 20);
-            this.txtTenCN.TabIndex = 30;
+            this.tb_tenChiNhanh.Location = new System.Drawing.Point(286, 134);
+            this.tb_tenChiNhanh.Name = "tb_tenChiNhanh";
+            this.tb_tenChiNhanh.Size = new System.Drawing.Size(124, 20);
+            this.tb_tenChiNhanh.TabIndex = 30;
             // 
-            // txtMaCN
+            // tb_maChiNhanh
             // 
-            this.txtMaCN.Location = new System.Drawing.Point(287, 96);
-            this.txtMaCN.Name = "txtMaCN";
-            this.txtMaCN.Size = new System.Drawing.Size(124, 20);
-            this.txtMaCN.TabIndex = 29;
+            this.tb_maChiNhanh.Location = new System.Drawing.Point(287, 96);
+            this.tb_maChiNhanh.Name = "tb_maChiNhanh";
+            this.tb_maChiNhanh.Size = new System.Drawing.Size(124, 20);
+            this.tb_maChiNhanh.TabIndex = 29;
             // 
             // label2
             // 
@@ -178,12 +181,12 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "Mã Chi Nhánh";
             // 
-            // txtDiachi
+            // tb_diaChi
             // 
-            this.txtDiachi.Location = new System.Drawing.Point(287, 169);
-            this.txtDiachi.Name = "txtDiachi";
-            this.txtDiachi.Size = new System.Drawing.Size(124, 20);
-            this.txtDiachi.TabIndex = 32;
+            this.tb_diaChi.Location = new System.Drawing.Point(287, 169);
+            this.tb_diaChi.Name = "tb_diaChi";
+            this.tb_diaChi.Size = new System.Drawing.Size(124, 20);
+            this.tb_diaChi.TabIndex = 32;
             // 
             // label1
             // 
@@ -209,6 +212,7 @@
             this.btReset.Text = "Reset";
             this.btReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btReset.UseVisualStyleBackColor = false;
+            this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // frmCapNhatChiNhanh
             // 
@@ -218,10 +222,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(847, 475);
             this.Controls.Add(this.btReset);
-            this.Controls.Add(this.txtDiachi);
+            this.Controls.Add(this.tb_diaChi);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtTenCN);
-            this.Controls.Add(this.txtMaCN);
+            this.Controls.Add(this.tb_tenChiNhanh);
+            this.Controls.Add(this.tb_maChiNhanh);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dgvCapNhatChiNhanh);
@@ -235,6 +239,7 @@
             this.Name = "frmCapNhatChiNhanh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Chi Nhánh Nhà Hàng";
+            this.Load += new System.EventHandler(this.frmCapNhatChiNhanh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatChiNhanh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -251,11 +256,11 @@
         private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Label lblGhiChu;
         private System.Windows.Forms.DataGridView dgvCapNhatChiNhanh;
-        private System.Windows.Forms.TextBox txtTenCN;
-        private System.Windows.Forms.TextBox txtMaCN;
+        private System.Windows.Forms.TextBox tb_tenChiNhanh;
+        private System.Windows.Forms.TextBox tb_maChiNhanh;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtDiachi;
+        private System.Windows.Forms.TextBox tb_diaChi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btReset;
     }
