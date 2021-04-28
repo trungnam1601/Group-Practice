@@ -45,17 +45,18 @@ namespace QuanLyNhaHang
         private void btnThemThucPham_Click(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            SqlDataAdapter aa = new SqlDataAdapter("PROC_INSERT_THUCPHAM", connection);
             try
             {
                 connection.Open();
-                string MaTP = textMTP.Text;
-                string TenTP = textTTP.Text;
-                string DVT = textDVT.Text;
-                string GB = textGB.Text;
-                string sql = "";
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                SqlDataReader dta = cmd.ExecuteReader();
-
+                aa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                aa.SelectCommand.Parameters.Add("@MATP", SqlDbType.VarChar, (10)).Value = textMTP.Text;
+                aa.SelectCommand.Parameters.Add("@TENTP", SqlDbType.NVarChar, (50)).Value = textTTP.Text;
+                aa.SelectCommand.Parameters.Add("@DVT", SqlDbType.NVarChar, (10)).Value = textDVT.Text;
+                aa.SelectCommand.Parameters.Add("@GIABAN", SqlDbType.Int).Value = textGB.Text;            
+                aa.SelectCommand.ExecuteNonQuery();
+                connection.Close();
+                //SqlDataReader dta = cmd.ExecuteReader();
             }
             catch (Exception ex)
             {
@@ -66,17 +67,14 @@ namespace QuanLyNhaHang
         private void btnXoaThucPham_Click(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            SqlDataAdapter aa = new SqlDataAdapter("PROC_DELETE_THUCPHAM", connection);
             try
             {
                 connection.Open();
-                string MaTP = textMTP.Text;
-                string TenTP = textTTP.Text;
-                string DVT = textDVT.Text;
-                string GB = textGB.Text;
-                string sql = "";
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                SqlDataReader dta = cmd.ExecuteReader();
-
+                aa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                aa.SelectCommand.Parameters.Add("@MATP", SqlDbType.VarChar, (10)).Value = textMTP.Text;
+                aa.SelectCommand.ExecuteNonQuery();
+                connection.Close();
             }
             catch (Exception ex)
             {
