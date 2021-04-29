@@ -40,9 +40,9 @@
             this.txtMaCN = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtDiaChiCN = new System.Windows.Forms.TextBox();
+            this.txtDiachi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btReset = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatChiNhanh)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +88,7 @@
             this.btnSuaChiNhanh.Text = "Sửa ";
             this.btnSuaChiNhanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaChiNhanh.UseVisualStyleBackColor = false;
-            this.btnSuaChiNhanh.Click += new System.EventHandler(this.btnSuaChiNhanh_Click);
+            this.btnSuaChiNhanh.Click += new System.EventHandler(this.btnCapNhatChiNhanh_Click);
             // 
             // btnXoaChiNhanh
             // 
@@ -144,7 +144,6 @@
             this.dgvCapNhatChiNhanh.RowHeadersWidth = 51;
             this.dgvCapNhatChiNhanh.Size = new System.Drawing.Size(541, 152);
             this.dgvCapNhatChiNhanh.TabIndex = 16;
-            this.dgvCapNhatChiNhanh.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCapNhatChiNhanh_CellMouseClick);
             // 
             // txtTenCN
             // 
@@ -182,12 +181,12 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "Mã Chi Nhánh";
             // 
-            // txtDiaChiCN
+            // txtDiachi
             // 
-            this.txtDiaChiCN.Location = new System.Drawing.Point(287, 169);
-            this.txtDiaChiCN.Name = "txtDiaChiCN";
-            this.txtDiaChiCN.Size = new System.Drawing.Size(124, 20);
-            this.txtDiaChiCN.TabIndex = 32;
+            this.txtDiachi.Location = new System.Drawing.Point(287, 169);
+            this.txtDiachi.Name = "txtDiachi";
+            this.txtDiachi.Size = new System.Drawing.Size(124, 20);
+            this.txtDiachi.TabIndex = 32;
             // 
             // label1
             // 
@@ -200,19 +199,19 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Địa chỉ";
             // 
-            // btReset
+            // btnLuu
             // 
-            this.btReset.BackColor = System.Drawing.Color.White;
-            this.btReset.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btReset.Image = global::QuanLyNhaHang.Properties.Resources.iconfinder_Synchronize_2788321;
-            this.btReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btReset.Location = new System.Drawing.Point(618, 155);
-            this.btReset.Name = "btReset";
-            this.btReset.Size = new System.Drawing.Size(84, 34);
-            this.btReset.TabIndex = 33;
-            this.btReset.Text = "Reset";
-            this.btReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btReset.UseVisualStyleBackColor = false;
+            this.btnLuu.BackColor = System.Drawing.Color.White;
+            this.btnLuu.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Image = global::QuanLyNhaHang.Properties.Resources.iconfinder_Synchronize_2788321;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(618, 155);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(84, 34);
+            this.btnLuu.TabIndex = 33;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLuu.UseVisualStyleBackColor = false;
             // 
             // frmCapNhatChiNhanh
             // 
@@ -221,8 +220,8 @@
             this.BackgroundImage = global::QuanLyNhaHang.Properties.Resources.b13;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(847, 475);
-            this.Controls.Add(this.btReset);
-            this.Controls.Add(this.txtDiaChiCN);
+            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.txtDiachi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTenCN);
             this.Controls.Add(this.txtMaCN);
@@ -239,6 +238,7 @@
             this.Name = "frmCapNhatChiNhanh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Chi Nhánh Nhà Hàng";
+            this.Load += new System.EventHandler(this.frmCapNhatChiNhanh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatChiNhanh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,8 +259,8 @@
         private System.Windows.Forms.TextBox txtMaCN;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtDiaChiCN;
+        private System.Windows.Forms.TextBox txtDiachi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btReset;
+        private System.Windows.Forms.Button btnLuu;
     }
 }

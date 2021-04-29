@@ -46,7 +46,6 @@
             this.dtgvThongTinNhanVien = new System.Windows.Forms.DataGridView();
             this.btnSuaNV = new System.Windows.Forms.Button();
             this.btnXoaNV = new System.Windows.Forms.Button();
-            this.btnLuuNV = new System.Windows.Forms.Button();
             this.btnTimKiemTTNV = new System.Windows.Forms.Button();
             this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.cbxGioiTinh = new System.Windows.Forms.ComboBox();
@@ -68,7 +67,7 @@
             this.btnThemNV.Text = "Thêm";
             this.btnThemNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemNV.UseVisualStyleBackColor = false;
-            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNhanVien_Click);
             // 
             // btnBackTTNV
             // 
@@ -83,7 +82,6 @@
             this.btnBackTTNV.Text = "Back";
             this.btnBackTTNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBackTTNV.UseVisualStyleBackColor = false;
-            this.btnBackTTNV.Click += new System.EventHandler(this.btnBackTTNV_Click);
             // 
             // label1
             // 
@@ -219,7 +217,6 @@
             this.dtgvThongTinNhanVien.Name = "dtgvThongTinNhanVien";
             this.dtgvThongTinNhanVien.Size = new System.Drawing.Size(718, 172);
             this.dtgvThongTinNhanVien.TabIndex = 37;
-            this.dtgvThongTinNhanVien.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvThongTinNhanVien_CellMouseClick);
             // 
             // btnSuaNV
             // 
@@ -234,7 +231,7 @@
             this.btnSuaNV.Text = "Sửa";
             this.btnSuaNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaNV.UseVisualStyleBackColor = false;
-            this.btnSuaNV.Click += new System.EventHandler(this.btnSuaNV_Click);
+            this.btnSuaNV.Click += new System.EventHandler(this.btnCapNhatNhanVien_Click);
             // 
             // btnXoaNV
             // 
@@ -249,21 +246,7 @@
             this.btnXoaNV.Text = "Xóa";
             this.btnXoaNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaNV.UseVisualStyleBackColor = false;
-            this.btnXoaNV.Click += new System.EventHandler(this.btnXoaNV_Click);
-            // 
-            // btnLuuNV
-            // 
-            this.btnLuuNV.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLuuNV.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuNV.Image = global::QuanLyNhaHang.Properties.Resources.iconfinder_Save_278762;
-            this.btnLuuNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuNV.Location = new System.Drawing.Point(655, 72);
-            this.btnLuuNV.Name = "btnLuuNV";
-            this.btnLuuNV.Size = new System.Drawing.Size(70, 39);
-            this.btnLuuNV.TabIndex = 13;
-            this.btnLuuNV.Text = "Lưu";
-            this.btnLuuNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLuuNV.UseVisualStyleBackColor = false;
+            this.btnXoaNV.Click += new System.EventHandler(this.btnXoaNhanVien_Click);
             // 
             // btnTimKiemTTNV
             // 
@@ -271,7 +254,7 @@
             this.btnTimKiemTTNV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTimKiemTTNV.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiemTTNV.Image = global::QuanLyNhaHang.Properties.Resources.iconfinder_Zoom_In_278882;
-            this.btnTimKiemTTNV.Location = new System.Drawing.Point(655, 128);
+            this.btnTimKiemTTNV.Location = new System.Drawing.Point(638, 71);
             this.btnTimKiemTTNV.Name = "btnTimKiemTTNV";
             this.btnTimKiemTTNV.Size = new System.Drawing.Size(115, 37);
             this.btnTimKiemTTNV.TabIndex = 10;
@@ -342,12 +325,12 @@
             this.Controls.Add(this.btnXoaNV);
             this.Controls.Add(this.btnThemNV);
             this.Controls.Add(this.btnBackTTNV);
-            this.Controls.Add(this.btnLuuNV);
             this.Controls.Add(this.btnTimKiemTTNV);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCapNhatThongTinNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Thông Tin Nhân Viên";
+            this.Load += new System.EventHandler(this.frmThongTinNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinNhanVien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -358,7 +341,6 @@
         private System.Windows.Forms.Button btnXoaNV;
         private System.Windows.Forms.Button btnThemNV;
         private System.Windows.Forms.Button btnBackTTNV;
-        private System.Windows.Forms.Button btnLuuNV;
         private System.Windows.Forms.Button btnTimKiemTTNV;
         private System.Windows.Forms.Button btnSuaNV;
         private System.Windows.Forms.Label label1;

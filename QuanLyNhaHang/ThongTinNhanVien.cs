@@ -9,8 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyNhaHang.DAO;
-using QuanLyNhaHang.DTO;
+
 namespace QuanLyNhaHang
 {
     public partial class frmCapNhatThongTinNhanVien : Form
@@ -19,7 +18,7 @@ namespace QuanLyNhaHang
         public frmCapNhatThongTinNhanVien()
         {
             InitializeComponent();
-            Load();
+            
         }
 
         private void btnBackTTNV_Click(object sender, EventArgs e)
@@ -27,6 +26,10 @@ namespace QuanLyNhaHang
             this.Close();
         }
 
+        private void frmThongTinNhanVien_Load(object sender, EventArgs e)
+        {
+            dtgvThongTinNhanVien.DataSource = GetNhanVien().Tables[0];
+        }
         DataSet GetNhanVien()
         {
             DataSet data = new DataSet();
@@ -41,134 +44,52 @@ namespace QuanLyNhaHang
             return data;
         }
 
-         void Load()
+        private void btnThemNhanVien_Click(object sender, EventArgs e)
         {
-            dtgvThongTinNhanVien.DataSource = nhanVienList;
-            LoadListNhanVien();
-            AddNhanVienBinding();
-        }
-
-        private void dtgvThongTinNhanVien_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            SqlDataAdapter aa = new SqlDataAdapter("PROC_INSERT_NHANVIEN", connection);
             try
             {
-                DataGridViewRow row = new DataGridViewRow();
-                row = dtgvThongTinNhanVien.Rows[e.RowIndex];
-                txtMaNV.Text = row.Cells[7].Value.ToString();
-                txtTenNV.Text = row.Cells[6].Value.ToString();
-                txtLuong.Text = row.Cells[5].Value.ToString();
-                dateNgaySinh.Text = row.Cells[4].Value.ToString();
-                cbxGioiTinh.Text = row.Cells[3].Value.ToString();
-                txtDiachi.Text = row.Cells[2].Value.ToString();
-                txtMaCN.Text = row.Cells[1].Value.ToString();
-                txtMaBP.Text = row.Cells[0].Value.ToString();
+                connection.Open();
+                aa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                aa.SelectCommand.Parameters.Add("@MANV", SqlDbType.VarChar, (10)).Value = txtMaNV.Text;
+                aa.SelectCommand.Parameters.Add("@TENNV", SqlDbType.NVarChar, (50)).Value = txtTenNV.Text;
+                aa.SelectCommand.Parameters.Add("@LUONG", SqlDbType.NVarChar, (10)).Value = txtLuong.Text;
+                aa.SelectCommand.Parameters.Add("@NGAYSINH", SqlDbType.Int).Value = dateNgaySinh.Text;
+                aa.SelectCommand.Parameters.Add("@GIOITINH", SqlDbType.VarChar, (10)).Value = cbxGioiTinh.Text;
+                aa.SelectCommand.Parameters.Add("@DIACHI", SqlDbType.NVarChar, (50)).Value = txtDiachi.Text;
+                aa.SelectCommand.Parameters.Add("@MACN", SqlDbType.NVarChar, (50)).Value = txtMaCN.Text;
+                aa.SelectCommand.Parameters.Add("@MABP", SqlDbType.NVarChar, (50)).Value = txtMaBP.Text;
+                aa.SelectCommand.ExecuteNonQuery();
+                connection.Close();
+                //SqlDataReader dta = cmd.ExecuteReader();
             }
-            catch(Exception)
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
-        void LoadListNhanVien()
+        private void btnXoaNhanVien_Click(object sender, EventArgs e)
         {
-            nhanVienList.DataSource = NhanVienDAO.Instance.GetListNhanVien();
-        }
-
-        void AddNhanVienBinding()
-        {
-            txtMaNV.DataBindings.Add(new Binding("Text", dtgvThongTinNhanVien.DataSource, "MaNV", true, DataSourceUpdateMode.Never));
-            txtTenNV.DataBindings.Add(new Binding("Text", dtgvThongTinNhanVien.DataSource, "TenNV", true, DataSourceUpdateMode.Never));
-            txtLuong.DataBindings.Add(new Binding("Text", dtgvThongTinNhanVien.DataSource, "Luong", true, DataSourceUpdateMode.Never));
-            dateNgaySinh.DataBindings.Add(new Binding("Text", dtgvThongTinNhanVien.DataSource, "NgaySinh", true, DataSourceUpdateMode.Never));
-            cbxGioiTinh.DataBindings.Add(new Binding("Text", dtgvThongTinNhanVien.DataSource, "GioiTinh", true, DataSourceUpdateMode.Never));
-            txtDiachi.DataBindings.Add(new Binding("Text", dtgvThongTinNhanVien.DataSource, "DiaChi", true, DataSourceUpdateMode.Never));
-            txtMaCN.DataBindings.Add(new Binding("Text", dtgvThongTinNhanVien.DataSource, "MaCN", true, DataSourceUpdateMode.Never));
-            txtMaBP.DataBindings.Add(new Binding("Text", dtgvThongTinNhanVien.DataSource, "MaBP", true, DataSourceUpdateMode.Never));
-            
-        }
-        private void btnThemNV_Click(object sender, EventArgs e)
-        {
-            string maNV = txtMaNV.Text;
-            string name = txtTenNV.Text;
-            string luong = txtLuong.Text;
-            string ngaySinh = dateNgaySinh.Text;
-            string gioiTinh = cbxGioiTinh.SelectedItem.ToString();
-            string diaChi = txtDiachi.Text;
-            string maCN = txtMaCN.Text;
-            string maBP = txtMaBP.Text;
-
-            if (NhanVienDAO.Instance.InsertEmployee(maNV, name, luong, ngaySinh, gioiTinh, diaChi, maCN, maBP))
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            SqlDataAdapter aa = new SqlDataAdapter("PROC_DELETE_NHANVIEN", connection);
+            try
             {
-                MessageBox.Show("success!");
-                LoadListNhanVien();
-                if (insertEmployee != null)
-                    insertEmployee(this, new EventArgs());
+                connection.Open();
+                aa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                aa.SelectCommand.Parameters.Add("@MANV", SqlDbType.VarChar, (10)).Value = txtMaNV.Text;
+                aa.SelectCommand.ExecuteNonQuery();
+                connection.Close();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Something's wrong");
+                MessageBox.Show(ex.Message);
             }
-
-
-        }
-
-        private void btnSuaNV_Click(object sender, EventArgs e)
-        {
-            string maNV = txtMaNV.Text;
-            string name = txtTenNV.Text;
-            string luong = txtLuong.Text;
-            string ngaySinh = dateNgaySinh.Text;
-            string gioiTinh = cbxGioiTinh.SelectedItem.ToString();
-            string diaChi = txtDiachi.Text;
-            string maCN = txtMaCN.Text;
-            string maBP = txtMaBP.Text;
-            if (NhanVienDAO.Instance.UpdateEmployee(maNV, name, luong, ngaySinh, gioiTinh, diaChi, maCN, maBP))
-            {
-                MessageBox.Show("success!");
-                LoadListNhanVien();
-                if (updateEmployee != null)
-                    updateEmployee(this, new EventArgs());
-            }
-            else
-            {
-                MessageBox.Show("Something's wrong");
-            }
-        }
-        private void btnXoaNV_Click(object sender, EventArgs e)
-        {
-            string maNV = txtMaNV.Text;
-            
-            if (NhanVienDAO.Instance.DeleteEmployee(maNV))
-            {
-                MessageBox.Show("success!");
-                LoadListNhanVien();
-                if (deleteEmployee != null)
-                    deleteEmployee(this, new EventArgs());
-            }
-            else
-            {
-                MessageBox.Show("Something's wrong");
-            }
-        }
-        private event EventHandler insertEmployee;
-        public event EventHandler InsertEmployee
-        {
-            add { insertEmployee += value; }
-            remove { insertEmployee -= value; }
-        }
-        private event EventHandler deleteEmployee;
-        public event EventHandler DeleteEmployee
-        {
-            add { deleteEmployee += value; }
-            remove { deleteEmployee -= value; }
         }
 
-        private event EventHandler updateEmployee;
-        public event EventHandler UpdateEmployee
+        private void btnCapNhatNhanVien_Click(object sender, EventArgs e)
         {
-            add { updateEmployee += value; }
-            remove { updateEmployee -= value; }
+            dtgvThongTinNhanVien.DataSource = GetNhanVien().Tables[0];
         }
-
-        
     }
 }

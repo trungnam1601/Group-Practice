@@ -102,7 +102,6 @@ namespace QuanLyNhaHang
             this.dgvCapNhatBoPhanNV.RowHeadersWidth = 51;
             this.dgvCapNhatBoPhanNV.Size = new System.Drawing.Size(520, 161);
             this.dgvCapNhatBoPhanNV.TabIndex = 37;
-            this.dgvCapNhatBoPhanNV.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCapNhatBoPhanNV_CellMouseClick);
             // 
             // btnSuaBoPhan
             // 
@@ -117,7 +116,7 @@ namespace QuanLyNhaHang
             this.btnSuaBoPhan.Text = "Sửa ";
             this.btnSuaBoPhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaBoPhan.UseVisualStyleBackColor = false;
-            this.btnSuaBoPhan.Click += new System.EventHandler(this.btnSuaBoPhan_Click);
+            this.btnSuaBoPhan.Click += new System.EventHandler(this.frmCapNhatBoPhanNhanVien_Load);
             // 
             // btnXoaBoPhan
             // 
@@ -173,7 +172,7 @@ namespace QuanLyNhaHang
             this.btnTroVeBPNV.Text = "Trở về";
             this.btnTroVeBPNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTroVeBPNV.UseVisualStyleBackColor = false;
-            this.btnTroVeBPNV.Click += new System.EventHandler(this.btnTroVeBPNV_Click);
+            this.btnTroVeBPNV.Click += new System.EventHandler(this.btnThoatCapNhatDichVu_Click);
             // 
             // frmCapNhatBoPhanNhanVien
             // 
@@ -194,6 +193,7 @@ namespace QuanLyNhaHang
             this.Controls.Add(this.btnThemBoPhan);
             this.Name = "frmCapNhatBoPhanNhanVien";
             this.Text = "Cập Nhật Bộ Phận Nhân Viên";
+            this.Load += new System.EventHandler(this.frmCapNhatBoPhanNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatBoPhanNV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
