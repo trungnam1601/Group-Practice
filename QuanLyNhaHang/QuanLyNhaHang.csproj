@@ -94,6 +94,12 @@
       <DependentUpon>CapNhatBoPhanNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\Helper.cs" />
+    <Compile Include="HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ChiTietHoaDon.cs" />
     <Compile Include="Model\DichVu.cs" />
     <Compile Include="Model\HoaDon.cs" />
@@ -156,6 +162,12 @@
     <Compile Include="MainForms\QuanLyNhaHang.Designer.cs">
       <DependentUpon>QuanLyNhaHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThọngKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThọngKe.Designer.cs">
+      <DependentUpon>ThọngKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +195,9 @@
     <EmbeddedResource Include="CapNhatNhaCungCap.resx">
       <DependentUpon>CapNhatNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForms\LienHe.resx">
       <DependentUpon>LienHe.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForms\QuanLyNhaHang.resx">
       <DependentUpon>QuanLyNhaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThọngKe.resx">
+      <DependentUpon>ThọngKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinNhanVien.resx">
       <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
