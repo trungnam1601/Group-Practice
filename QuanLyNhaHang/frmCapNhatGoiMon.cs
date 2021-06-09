@@ -44,16 +44,18 @@ namespace QuanLyNhaHang
             {
                 monAn.Add(new MonAn()
                 {
-                    MaMA=drMA["MaMA"]as string,
-                    TenMA= drMA["TenMA"] as string,
+                    MaMA = drMA["MaMA"] as string,
+                    TenMA = drMA["TenMA"] as string,
                     DVT = drMA["DVT"] as string,
                     GiaBan = ((int)drMA["GiaBan"]),
                     MaNhomMA = drMA["MaNhomMA"] as string,
                     TrangThai = drMA["TrangThai"] as string,
                 });
+                
             }
-            conn.Close();
             
+            conn.Close();
+
         }
 
         private string[] GetFoodByID(string maNhomMA)
@@ -64,7 +66,10 @@ namespace QuanLyNhaHang
         {
             return monAn.Where(line => line.TenMA == TenMA).Select(l => l.MaMA).ToArray();
         }
-
+        private int[] GetPriceByName(string TenMA)
+        {
+            return monAn.Where(line => line.TenMA == TenMA).Select(l => l.GiaBan).ToArray();
+        }
         [Serializable]
         class NhomMA
         {
@@ -88,15 +93,16 @@ namespace QuanLyNhaHang
             string MaNhomMA = nhomMA[cmbNhomMA.SelectedIndex].MaNhomMA;
             foreach (string tenMA in GetFoodByID(MaNhomMA))
             {
-                cmbMA.ValueMember = "MaMA";
+                //cmbMA.ValueMember = "MaMA";
                 this.cmbMA.Items.Add(tenMA);
             }
         }
 
         DataSet GetRequest()
         {
+
             DataSet data = new DataSet();
-            string query = "select MaMA, DonGiaMA, SoLuongMA, DonGiaMA*SoLuongMA as TongTien from ChiTietYeuCau Where MaPYC = '"+txtMaPYC.Text+"'";
+            string query = "select MaPYC, MaMA, DonGiaMA, SoLuongMA, DonGiaMA*SoLuongMA as TongTien from ChiTietYeuCau Where MaPYC LIKE '%"+txtTimKiem.Text+"'";
             using (SqlConnection connection = new SqlConnection(Helper.Define.dataSource))
             {
                 connection.Open();
@@ -107,7 +113,7 @@ namespace QuanLyNhaHang
             return data;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnTimKiem_Click(object sender, EventArgs e)
         {
             dtgvCapNhatGoiMon.DataSource = GetRequest().Tables[0];
         }
@@ -121,10 +127,13 @@ namespace QuanLyNhaHang
                 connection.Open();
                 aa.SelectCommand.CommandType = CommandType.StoredProcedure;
                 aa.SelectCommand.Parameters.Add("@MAPYC", SqlDbType.VarChar, (10)).Value = txtMaPYC.Text;
-                //cmbMA.ValueMember = "MAMA";
-                cmbMA.Text=((MonAn)cmbMA.SelectedItem).MaMA;
-                aa.SelectCommand.Parameters.Add("@MAMA", SqlDbType.VarChar, (10)).Value = cmbMA.Text;
-                //aa.SelectCommand.Parameters.Add("@DONGIAMA", SqlDbType.Int).Value = txtLuong.Text;
+                cmbMA.ValueMember = "MaMA";
+                //cmbMA.Text=((MonAn)cmbMA.SelectedItem).MaMA;
+                cmbMA.DataSource = monAn;
+                cmbMA.DisplayMember = "TenMA";
+                cmbMA.ValueMember = "MaMA";
+                aa.SelectCommand.Parameters.Add("@MAMA", SqlDbType.VarChar, (10)).Value = cmbMA.SelectedValue;
+                aa.SelectCommand.Parameters.Add("@DONGIA", SqlDbType.Int).Value = txtDonGia.Text;
                 aa.SelectCommand.Parameters.Add("@SOLUONGMA", SqlDbType.Int).Value = txtSoLuong.Text;
                 aa.SelectCommand.ExecuteNonQuery();
                 connection.Close();
@@ -133,6 +142,66 @@ namespace QuanLyNhaHang
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void cmbMA_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtDonGia.Clear();
+            string TenMA = monAn[cmbMA.SelectedIndex].TenMA;
+            //foreach (int GiaBan in GetPriceByName(TenMA))
+            //{
+            //    //cmbMA.ValueMember = "MaMA";
+            //    // this.cmbMA.Items.Add(tenMA);
+            //    int ProductIndex = monAn[cmbMA.SelectedIndex].GiaBan;
+            //    txtDonGia.Text = cmbMA.Items[ProductIndex].ToString();
+            //}
+        }
+
+        private void btnXoaMonAn_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            SqlDataAdapter aa = new SqlDataAdapter("PROC_DELETE_YEUCAUMONAN", connection);
+            try
+            {
+                connection.Open();
+                aa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                aa.SelectCommand.Parameters.Add("@MAPYC", SqlDbType.VarChar, (10)).Value = txtMaPYC.Text;
+
+                cmbMA.DataSource = monAn;
+                cmbMA.DisplayMember = "TenMA";
+                cmbMA.ValueMember = "MaMA";
+                aa.SelectCommand.Parameters.Add("@MAMA", SqlDbType.VarChar, (10)).Value = cmbMA.SelectedValue;
+                
+                aa.SelectCommand.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dtgvCapNhatGoiMon_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            try
+            {
+                connection.Open();
+                DataGridViewRow row = new DataGridViewRow();
+                row = dtgvCapNhatGoiMon.Rows[e.RowIndex];
+                txtMaPYC.Text = row.Cells[0].Value.ToString();
+                txtSoLuong.Text = row.Cells[3].Value.ToString();
+                txtDonGia.Text = row.Cells[2].Value.ToString();
+                cmbMA.DataSource = monAn;
+                cmbMA.DisplayMember = "TenMA";
+                cmbMA.ValueMember = "MaMA";
+                cmbMA.ValueMember = row.Cells[1].Value.ToString();
+                connection.Close();
+            }
+            catch (Exception)
+            {
+
             }
         }
     }
