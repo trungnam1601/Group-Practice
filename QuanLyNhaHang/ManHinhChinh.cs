@@ -272,7 +272,7 @@ namespace QuanLyNhaHang
 
         private void ChiTiet_CLick(object sender, EventArgs e)
         {
-            frmChiTietPhieuDatBan chiTietPhieuDatBan = new frmChiTietPhieuDatBan();
+            frmCapNhatGoiMon chiTietPhieuDatBan = new frmCapNhatGoiMon();
             chiTietPhieuDatBan.ShowDialog();
         }
 
