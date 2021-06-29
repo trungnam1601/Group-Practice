@@ -4,11 +4,15 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyNhaHang.Helper;
+using Menu = QuanLyNhaHang.Helper.Menu;
+
 namespace QuanLyNhaHang
 {
     public partial class frmCapNhatGoiMon : Form
@@ -18,43 +22,45 @@ namespace QuanLyNhaHang
         public frmCapNhatGoiMon()
         {
             InitializeComponent();
+            
         }
         
         private void frmCapNhatGoiMon_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new Helper.Define().GetConnection();
-            conn.Open();
-            SqlCommand cmdNMA = new SqlCommand("SELECT * FROM NhomMonAn", conn);
-            SqlDataReader drNMA = cmdNMA.ExecuteReader();
-            while (drNMA.Read())
-            {
-                cmbNhomMA.Items.Add(drNMA["TenNhomMA"]);
-                nhomMA.Add(new NhomMA()
-                {
-                    MaNhomMA = drNMA["MaNhomMA"] as string,
-                    TenNhomMA = drNMA["TenNhomMA"] as string
-                });
-            }
-            conn.Close();
+            LoadCategory();
+            //SqlConnection conn = new Helper.Define().GetConnection();
+            //conn.Open();
+            //SqlCommand cmdNMA = new SqlCommand("SELECT * FROM NhomMonAn", conn);
+            //SqlDataReader drNMA = cmdNMA.ExecuteReader();
+            //while (drNMA.Read())
+            //{
+            //    cmbNhomMA.Items.Add(drNMA["TenNhomMA"]);
+            //    nhomMA.Add(new NhomMA()
+            //    {
+            //        MaNhomMA = drNMA["MaNhomMA"] as string,
+            //        TenNhomMA = drNMA["TenNhomMA"] as string
+            //    });
+            //}
+            //conn.Close();
 
-            conn.Open();
-            SqlCommand cmdMA = new SqlCommand("SELECT * FROM MonAn", conn);
-            SqlDataReader drMA = cmdMA.ExecuteReader();
-            while (drMA.Read())
-            {
-                monAn.Add(new MonAn()
-                {
-                    MaMA = drMA["MaMA"] as string,
-                    TenMA = drMA["TenMA"] as string,
-                    DVT = drMA["DVT"] as string,
-                    GiaBan = ((int)drMA["GiaBan"]),
-                    MaNhomMA = drMA["MaNhomMA"] as string,
-                    TrangThai = drMA["TrangThai"] as string,
-                });
-                
-            }
-            
-            conn.Close();
+            //conn.Open();
+            //SqlCommand cmdMA = new SqlCommand("SELECT * FROM MonAn", conn);
+            //SqlDataReader drMA = cmdMA.ExecuteReader();
+            //while (drMA.Read())
+            //{
+            //    monAn.Add(new MonAn()
+            //    {
+            //        MaMA = drMA["MaMA"] as string,
+            //        TenMA = drMA["TenMA"] as string,
+            //        DVT = drMA["DVT"] as string,
+            //        GiaBan = ((int)drMA["GiaBan"]),
+            //        MaNhomMA = drMA["MaNhomMA"] as string,
+            //        TrangThai = drMA["TrangThai"] as string,
+            //    });
+
+            //}
+
+            //conn.Close();
 
         }
 
@@ -62,9 +68,13 @@ namespace QuanLyNhaHang
         {
             return monAn.Where(line => line.MaNhomMA == maNhomMA).Select(l => l.TenMA).ToArray();
         }
-        private string[] GetIdByName(string TenMA)
+        private string[] GetIDByFood(string maMA)
         {
-            return monAn.Where(line => line.TenMA == TenMA).Select(l => l.MaMA).ToArray();
+            return monAn.Where(line => line.MaMA == maMA).Select(l => l.MaNhomMA).ToArray();
+        }
+        private string[] GetIdByName(string MaMA)
+        {
+            return monAn.Where(line => line.MaMA == MaMA).Select(l => l.TenMA).ToArray();
         }
         private int[] GetPriceByName(string TenMA)
         {
@@ -89,13 +99,17 @@ namespace QuanLyNhaHang
 
         private void cmbNhomMA_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbMA.Items.Clear();
-            string MaNhomMA = nhomMA[cmbNhomMA.SelectedIndex].MaNhomMA;
-            foreach (string tenMA in GetFoodByID(MaNhomMA))
-            {
-                //cmbMA.ValueMember = "MaMA";
-                this.cmbMA.Items.Add(tenMA);
-            }
+            string id = "";
+
+            ComboBox cb = sender as ComboBox;
+
+            if (cb.SelectedItem == null)
+                return;
+
+            Category selected = cb.SelectedItem as Category;
+            id = selected.ID;
+
+            LoadFoodListByCategoryID(id);
         }
 
         DataSet GetRequest()
@@ -115,7 +129,14 @@ namespace QuanLyNhaHang
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            dtgvCapNhatGoiMon.DataSource = GetRequest().Tables[0];
+
+            //dtgvCapNhatGoiMon.DataSource = GetRequest().Tables[0];
+            ShowOrder(txtTimKiem.Text);
+            txtDonGia.Text="";
+            txtSoLuong.Text="";
+            txtMaPYC.Text = "";
+            cmbMA.Text = "";
+            cmbNhomMA.Text = "";
         }
 
         private void btnThemMonAn_Click(object sender, EventArgs e)
@@ -149,13 +170,13 @@ namespace QuanLyNhaHang
         {
             txtDonGia.Clear();
             string TenMA = monAn[cmbMA.SelectedIndex].TenMA;
-            //foreach (int GiaBan in GetPriceByName(TenMA))
-            //{
-            //    //cmbMA.ValueMember = "MaMA";
-            //    // this.cmbMA.Items.Add(tenMA);
-            //    int ProductIndex = monAn[cmbMA.SelectedIndex].GiaBan;
-            //    txtDonGia.Text = cmbMA.Items[ProductIndex].ToString();
-            //}
+            foreach (int GiaBan in GetPriceByName(TenMA))
+            {
+                //cmbMA.ValueMember = "MaMA";
+                // this.cmbMA.Items.Add(tenMA);
+                //int ProductIndex = monAn[cmbMA.SelectedIndex].GiaBan;
+                //txtDonGia.Text = cmbMA.Items[ProductIndex].ToString();
+            }
         }
 
         private void btnXoaMonAn_Click(object sender, EventArgs e)
@@ -191,18 +212,54 @@ namespace QuanLyNhaHang
                 DataGridViewRow row = new DataGridViewRow();
                 row = dtgvCapNhatGoiMon.Rows[e.RowIndex];
                 txtMaPYC.Text = row.Cells[0].Value.ToString();
-                txtSoLuong.Text = row.Cells[3].Value.ToString();
                 txtDonGia.Text = row.Cells[2].Value.ToString();
+                txtSoLuong.Text = row.Cells[3].Value.ToString();
                 cmbMA.DataSource = monAn;
-                cmbMA.DisplayMember = "TenMA";
-                cmbMA.ValueMember = "MaMA";
-                cmbMA.ValueMember = row.Cells[1].Value.ToString();
+
+                //string TenMA = monAn[cmbMA.SelectedIndex].TenMA;
+                string MaMA = row.Cells[1].Value.ToString();
+                cmbMA.Text = GetIdByName(MaMA).ToString();
+                
                 connection.Close();
             }
             catch (Exception)
             {
 
             }
+        }
+
+        void ShowOrder(string id)
+        {
+            lsvOrder.Items.Clear();
+            List<Menu> listBillInfo = MenuDAO.Instance.GetListMenu(id);
+            float totalPrice = 0;
+            foreach (Menu item in listBillInfo)
+            {
+                ListViewItem lsvItem = new ListViewItem(item.FoodName.ToString());
+                lsvItem.SubItems.Add(item.Count.ToString());
+                lsvItem.SubItems.Add(item.Price.ToString());
+                lsvItem.SubItems.Add(item.TotalPrice.ToString());
+                totalPrice += item.TotalPrice;
+                lsvOrder.Items.Add(lsvItem);
+            }
+            CultureInfo culture = new CultureInfo("vi-VN");
+
+            Thread.CurrentThread.CurrentCulture = culture;
+
+            txtTotalPrice.Text = totalPrice.ToString("c", culture);
+        }
+        void LoadCategory()
+        {
+            List<Category> listCategory = CategoryDAO.Instance.GetListCategory();
+            cmbNhomMA.DataSource = listCategory;
+            cmbNhomMA.DisplayMember = "Name";
+        }
+
+        void LoadFoodListByCategoryID(string id)
+        {
+            List<Food> listFood = FoodDAO.Instance.GetFoodByCategoryID(id);
+            cmbMA.DataSource = listFood;
+            cmbMA.DisplayMember = "Name";
         }
     }
 }
