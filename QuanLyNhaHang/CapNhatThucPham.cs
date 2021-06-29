@@ -53,6 +53,7 @@ namespace QuanLyNhaHang
                 aa.SelectCommand.Parameters.Add("@MATP", SqlDbType.VarChar, (10)).Value = textMTP.Text;
                 aa.SelectCommand.Parameters.Add("@TENTP", SqlDbType.NVarChar, (50)).Value = textTTP.Text;
                 aa.SelectCommand.Parameters.Add("@DVT", SqlDbType.NVarChar, (10)).Value = textDVT.Text;
+                aa.SelectCommand.Parameters.Add("@SOLUONGTON", SqlDbType.Int).Value = textSL.Text;
                 aa.SelectCommand.Parameters.Add("@GIABAN", SqlDbType.Int).Value = textGB.Text;            
                 aa.SelectCommand.ExecuteNonQuery();
                 connection.Close();
@@ -90,6 +91,39 @@ namespace QuanLyNhaHang
         private void dgvCapNhatThucPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void textMTP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblthucphamnhahang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            SqlDataAdapter aa = new SqlDataAdapter("PROC_UPDATE_THUCPHAM", connection);
+            try
+            {
+                connection.Open();
+                aa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                aa.SelectCommand.Parameters.Add("@MATP", SqlDbType.VarChar, (10)).Value = textMTP.Text;
+                aa.SelectCommand.Parameters.Add("@TENTP", SqlDbType.NVarChar, (50)).Value = textTTP.Text;
+                aa.SelectCommand.Parameters.Add("@DVT", SqlDbType.NVarChar, (10)).Value = textDVT.Text;
+                aa.SelectCommand.Parameters.Add("@SOLUONGTON", SqlDbType.Int).Value = textSL.Text;
+                aa.SelectCommand.Parameters.Add("@GIABAN", SqlDbType.Int).Value = textGB.Text;
+                aa.SelectCommand.ExecuteNonQuery();
+                connection.Close();
+                //SqlDataReader dta = cmd.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

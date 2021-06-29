@@ -87,5 +87,28 @@ namespace QuanLyNhaHang
         {
             dgvCapNhatMonAn.DataSource = GetMonAn().Tables[0];
         }
+
+        private void btnHuyCapNhatBanAn_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            SqlDataAdapter aa = new SqlDataAdapter("PROC_UPDATE_MONAN", connection);
+            try
+            {
+                connection.Open();
+                aa.SelectCommand.Parameters.Add("@MAMA", SqlDbType.VarChar, (10)).Value = textMTP.Text;
+                aa.SelectCommand.Parameters.Add("@TENMA", SqlDbType.NVarChar, (50)).Value = textTTP.Text;
+                aa.SelectCommand.Parameters.Add("@DVT", SqlDbType.NVarChar, (10)).Value = textDVT.Text;
+                aa.SelectCommand.Parameters.Add("@GIABAN", SqlDbType.Int).Value = textGB.Text;
+                aa.SelectCommand.Parameters.Add("@MANHOMMA", SqlDbType.VarChar, (10)).Value = textMNMA.Text;
+                aa.SelectCommand.Parameters.Add("@TRANGTHAIMONAN", SqlDbType.NVarChar, (50)).Value = textTT.Text;
+                aa.SelectCommand.ExecuteNonQuery();
+                connection.Close();
+                //SqlDataReader dta = cmd.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

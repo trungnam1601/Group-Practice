@@ -59,9 +59,9 @@ namespace QuanLyNhaHang
             this.lblCapNhatBanAn.Location = new System.Drawing.Point(388, 11);
             this.lblCapNhatBanAn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCapNhatBanAn.Name = "lblCapNhatBanAn";
-            this.lblCapNhatBanAn.Size = new System.Drawing.Size(321, 50);
+            this.lblCapNhatBanAn.Size = new System.Drawing.Size(306, 50);
             this.lblCapNhatBanAn.TabIndex = 0;
-            this.lblCapNhatBanAn.Text = "Cập Nhật Bàn Ăn";
+            this.lblCapNhatBanAn.Text = "Quản Lý Bàn Ăn";
             // 
             // btnLuuCapNhatBanAn
             // 
@@ -283,7 +283,7 @@ namespace QuanLyNhaHang
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCapNhatBanAn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cập Nhật Bàn Ăn";
+            this.Text = "Quản lý Bàn Ăn";
             this.Load += new System.EventHandler(this.frmCapNhatBanAn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCapNhatBanAn)).EndInit();
             this.ResumeLayout(false);

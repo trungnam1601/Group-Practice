@@ -54,3 +54,27 @@ C:\Users\Admin\Desktop\Goc hoc tap\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLy
 C:\Users\Admin\Desktop\Goc hoc tap\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.csproj.CopyComplete
 C:\Users\Admin\Desktop\Goc hoc tap\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.exe
 C:\Users\Admin\Desktop\Goc hoc tap\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.pdb
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmCapNhatBoPhanNhanVien.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmCapNhatChiNhanh.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmCapNhatBanAn.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmCapNhatMonAn.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmthucphamnhahang.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmDangNhap.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmNhaCungCap.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.HoaDon.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmLienHe.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmManHinhChinh.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmChiTietPhieuDatBan.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmQuanLyKhachHang.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmQuanLyNhanVien.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.Properties.Resources.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmQuanLyNhaHang.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.ThọngKe.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.frmCapNhatThongTinNhanVien.resources
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.exe
+C:\Users\Admin\Desktop\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.pdb
+C:\Users\Admin\Desktop\Goc hoc tap\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.HoaDon.resources
+C:\Users\Admin\Desktop\Goc hoc tap\Group-Practice\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.ThọngKe.resources

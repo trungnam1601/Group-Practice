@@ -272,8 +272,8 @@ namespace QuanLyNhaHang
 
         private void ChiTiet_CLick(object sender, EventArgs e)
         {
-            frmCapNhatGoiMon chiTietPhieuDatBan = new frmCapNhatGoiMon();
-            chiTietPhieuDatBan.ShowDialog();
+            //frmCapNhatGoiMon chiTietPhieuDatBan = new frmCapNhatGoiMon();
+            //chiTietPhieuDatBan.ShowDialog();
         }
 
         private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
