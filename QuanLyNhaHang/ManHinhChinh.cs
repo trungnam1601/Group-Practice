@@ -1,4 +1,5 @@
 ﻿using PhanMemQuanLyKhachSan.Model;
+using QuanLyNhaHang.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,9 +8,10 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Menu = QuanLyNhaHang.Helper.Menu;
 namespace QuanLyNhaHang
 {
     public partial class frmManHinhChinh : Form
@@ -20,6 +22,8 @@ namespace QuanLyNhaHang
         public frmManHinhChinh()
         {
             InitializeComponent();
+            LoadTable();
+            LoadCategory();
         }
 
         private void OpenChildForm(Form childForm)
@@ -31,6 +35,7 @@ namespace QuanLyNhaHang
             }
             currentChildForm = childForm;
             //End
+            
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
@@ -42,224 +47,23 @@ namespace QuanLyNhaHang
         }
         private void QuanLyNhaHang_Click(object sender, EventArgs e)
         {
+            flpTable.Controls.Clear();
             OpenChildForm(new frmQuanLyNhaHang());
 
         }
 
         private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            flpTable.Controls.Clear();
             OpenChildForm(new frmQuanLyNhanVien());
         }
 
         private void quảnLýKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            flpTable.Controls.Clear();
             OpenChildForm(new frmQuanLyKhachHang());
         }
-
-        private void cmbBan1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan1.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan1.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan1.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan1.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan2.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan2.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan2.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan2.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan3.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan3.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan3.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan3.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan4.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan4.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan4.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan4.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan5.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan5.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan5.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan5.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan6_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan6.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan6.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan6.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan6.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan7_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan7.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan7.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan7.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan7.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan8_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan8.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan8.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan8.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan8.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan9_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan9.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan9.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan9.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan9.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan10_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan10.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan10.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan10.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan10.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan11_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan11.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan11.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan11.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan11.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
-        private void cmbBan12_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string trangThai = cmbBan12.SelectedItem.ToString();
-            switch (trangThai)
-            {
-                case "Bàn Đang Sử Dụng":
-                    lblBan12.BackColor = Color.Green;
-                    break;
-                case "Bàn Trống":
-                    lblBan12.BackColor = Color.IndianRed;
-                    break;
-                case "Bàn Đang Dọn":
-                    lblBan12.BackColor = Color.Gray;
-                    break;
-            }
-        }
-
+        
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -267,17 +71,14 @@ namespace QuanLyNhaHang
 
         private void liênHệToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            flpTable.Controls.Clear();
             OpenChildForm(new frmLienHe());
-        }
-
-        private void ChiTiet_CLick(object sender, EventArgs e)
-        {
-            //frmCapNhatGoiMon chiTietPhieuDatBan = new frmCapNhatGoiMon();
-            //chiTietPhieuDatBan.ShowDialog();
         }
 
         private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            LoadTable();
+            LoadCategory();
             if (currentChildForm != null)
             {
                 currentChildForm.Close();
@@ -285,6 +86,126 @@ namespace QuanLyNhaHang
            
         }
 
-       
+        void LoadTable()
+        {
+            List<Table> tableList = TableDAO.Instance.LoadTableList();
+
+            foreach (Table item in tableList)
+            {
+                Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
+                btn.Text = item.MaBan + Environment.NewLine + item.TrangThai;
+                btn.Click += btn_Click;
+                btn.Tag = item;
+
+                switch (item.TrangThai)
+                {
+                    case "Đang Sử Dụng":
+                        btn.BackColor = Color.Green;
+                        break;
+                    default:
+                        btn.BackColor = Color.IndianRed;
+                        break;
+                }
+
+                flpTable.Controls.Add(btn);
+            }
+        }
+        void btn_Click(object sender, EventArgs e)
+        {
+            string tableID = ((sender as Button).Tag as Table).MaBan;
+            lsvOrder.Tag = (sender as Button).Tag;
+            ShowOrder(tableID);
+        }
+        void ShowOrder(string id)
+        {
+            lsvOrder.Items.Clear();
+            List<Menu> listBillInfo = MenuDAO.Instance.GetListMenu(id);
+            float totalPrice = 0;
+            
+            foreach (Menu item in listBillInfo)
+            {
+                ListViewItem lsvItem = new ListViewItem(item.MaPYC.ToString());
+                lsvItem.SubItems.Add(item.FoodName.ToString());
+                lsvItem.SubItems.Add(item.Count.ToString());
+                lsvItem.SubItems.Add(item.Price.ToString());
+                lsvItem.SubItems.Add(item.TotalPrice.ToString());
+
+                txtMaPYC.Text = item.MaPYC.ToString();
+                totalPrice += item.TotalPrice;
+                lsvOrder.Items.Add(lsvItem);
+            }
+            CultureInfo culture = new CultureInfo("vi-VN");
+
+            Thread.CurrentThread.CurrentCulture = culture;
+
+            txtTotalPrice.Text = totalPrice.ToString("c", culture);
+        }
+        void LoadCategory()
+        {
+            List<Category> listCategory = CategoryDAO.Instance.GetListCategory();
+            cmbNhomMA.DataSource = listCategory;
+            cmbNhomMA.DisplayMember = "TenNhomMA";
+        }
+
+        void LoadFoodListByCategoryID(string id)
+        {
+            List<Food> listFood = FoodDAO.Instance.GetFoodByCategoryID(id);
+            cmbMA.DataSource = listFood;
+            cmbMA.DisplayMember = "TenMA";
+        }
+
+        private void btnThemMonAn_Click(object sender, EventArgs e)
+        {
+            Table table = lsvOrder.Tag as Table;
+
+            string idOrder = OrderDAO.Instance.GetUncheckOrderID(table.MaBan);
+            string foodID = (cmbMA.SelectedItem as Food).MaMA;
+            int count = (int)nmFoodCount.Value;
+
+            if (idOrder == "-1")
+            {
+                OrderDAO.Instance.InsertOrder(table.MaBan);
+                OrderDetailDAO.Instance.InsertOrderInfo(OrderDAO.Instance.GetMaxIDOrder(), foodID, count);
+            }
+            else
+            {
+                OrderDetailDAO.Instance.InsertOrderInfo(idOrder, foodID, count);
+            }
+
+            ShowOrder(table.MaBan);
+        }
+
+        private void cmbNhomMA_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string id = "";
+
+            ComboBox cb = sender as ComboBox;
+
+            if (cb.SelectedItem == null)
+                return;
+
+            Category selected = cb.SelectedItem as Category;
+            id = selected.MaNhomMA;
+
+            LoadFoodListByCategoryID(id);
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            Table table = lsvOrder.Tag as Table;
+
+            string idBill = OrderDAO.Instance.GetUncheckOrderID(table.MaBan);
+
+            if (idBill != "-1")
+            {
+                if (MessageBox.Show("Bạn có chắc thanh toán hóa đơn cho bàn " + table.MaBan, "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                {
+                    OrderDAO.Instance.CheckOut(idBill);
+                    ShowOrder(table.MaBan);
+
+                    LoadTable();
+                }
+            }
+        }
     }
 }

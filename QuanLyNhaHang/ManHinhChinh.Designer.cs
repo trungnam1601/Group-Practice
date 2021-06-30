@@ -46,111 +46,39 @@
             this.lblBanDangSuDung = new System.Windows.Forms.Label();
             this.lblPhongTrong = new System.Windows.Forms.Label();
             this.lblHienTrang = new System.Windows.Forms.Label();
-            this.pnlPhong1 = new System.Windows.Forms.Panel();
-            this.cmbBan1 = new System.Windows.Forms.ComboBox();
-            this.btnCheckOut1 = new System.Windows.Forms.Button();
-            this.btnChiTiet = new System.Windows.Forms.Button();
-            this.lblGhiChu1 = new System.Windows.Forms.Label();
-            this.lblSoPhong1 = new System.Windows.Forms.Label();
-            this.lblBan1 = new System.Windows.Forms.Label();
             this.panManHinhChinh = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.cmbBan12 = new System.Windows.Forms.ComboBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.lblBan12 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.cmbBan11 = new System.Windows.Forms.ComboBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.lblBan11 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.cmbBan10 = new System.Windows.Forms.ComboBox();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.lblBan10 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.cmbBan9 = new System.Windows.Forms.ComboBox();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.lblBan9 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.cmbBan8 = new System.Windows.Forms.ComboBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblMaBan = new System.Windows.Forms.Label();
-            this.lblBan8 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.cmbBan7 = new System.Windows.Forms.ComboBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lblBan7 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.cmbBan6 = new System.Windows.Forms.ComboBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.lblBan6 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.cmbBan5 = new System.Windows.Forms.ComboBox();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.lblBan5 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.cmbBan4 = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtMaPYC = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnThemMonAn = new System.Windows.Forms.Button();
+            this.txtTotalPrice = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtGiamGia = new System.Windows.Forms.TextBox();
+            this.btnGiamGia = new System.Windows.Forms.Button();
+            this.nmFoodCount = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblBan4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.cmbBan3 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblBan3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.cmbBan2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cmbNhomMA = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblBan2 = new System.Windows.Forms.Label();
+            this.cmbMA = new System.Windows.Forms.ComboBox();
+            this.lsvOrder = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.msManhinhchinh.SuspendLayout();
             this.pnlHientrang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhongTrong)).BeginInit();
-            this.pnlPhong1.SuspendLayout();
             this.panManHinhChinh.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
             this.SuspendLayout();
             // 
             // lblKhachSan
@@ -341,96 +269,6 @@
             this.lblHienTrang.Text = "Hiện trạng";
             this.lblHienTrang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlPhong1
-            // 
-            this.pnlPhong1.Controls.Add(this.cmbBan1);
-            this.pnlPhong1.Controls.Add(this.btnCheckOut1);
-            this.pnlPhong1.Controls.Add(this.btnChiTiet);
-            this.pnlPhong1.Controls.Add(this.lblGhiChu1);
-            this.pnlPhong1.Controls.Add(this.lblSoPhong1);
-            this.pnlPhong1.Controls.Add(this.lblBan1);
-            this.pnlPhong1.Location = new System.Drawing.Point(17, 2);
-            this.pnlPhong1.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlPhong1.Name = "pnlPhong1";
-            this.pnlPhong1.Size = new System.Drawing.Size(242, 145);
-            this.pnlPhong1.TabIndex = 4;
-            // 
-            // cmbBan1
-            // 
-            this.cmbBan1.FormattingEnabled = true;
-            this.cmbBan1.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan1.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan1.Name = "cmbBan1";
-            this.cmbBan1.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan1.TabIndex = 26;
-            this.cmbBan1.SelectedIndexChanged += new System.EventHandler(this.cmbBan1_SelectedIndexChanged);
-            // 
-            // btnCheckOut1
-            // 
-            this.btnCheckOut1.BackColor = System.Drawing.Color.LightBlue;
-            this.btnCheckOut1.FlatAppearance.BorderSize = 0;
-            this.btnCheckOut1.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckOut1.Location = new System.Drawing.Point(149, 102);
-            this.btnCheckOut1.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCheckOut1.Name = "btnCheckOut1";
-            this.btnCheckOut1.Size = new System.Drawing.Size(84, 29);
-            this.btnCheckOut1.TabIndex = 10;
-            this.btnCheckOut1.Text = "C/O";
-            this.btnCheckOut1.UseVisualStyleBackColor = false;
-            // 
-            // btnChiTiet
-            // 
-            this.btnChiTiet.BackColor = System.Drawing.Color.LightBlue;
-            this.btnChiTiet.FlatAppearance.BorderSize = 0;
-            this.btnChiTiet.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChiTiet.Location = new System.Drawing.Point(21, 102);
-            this.btnChiTiet.Margin = new System.Windows.Forms.Padding(2);
-            this.btnChiTiet.Name = "btnChiTiet";
-            this.btnChiTiet.Size = new System.Drawing.Size(84, 29);
-            this.btnChiTiet.TabIndex = 10;
-            this.btnChiTiet.Text = "Chi tiết";
-            this.btnChiTiet.UseVisualStyleBackColor = false;
-            this.btnChiTiet.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // lblGhiChu1
-            // 
-            this.lblGhiChu1.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGhiChu1.Location = new System.Drawing.Point(14, 68);
-            this.lblGhiChu1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblGhiChu1.Name = "lblGhiChu1";
-            this.lblGhiChu1.Size = new System.Drawing.Size(91, 24);
-            this.lblGhiChu1.TabIndex = 9;
-            this.lblGhiChu1.Text = "Trạng Thái";
-            this.lblGhiChu1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblSoPhong1
-            // 
-            this.lblSoPhong1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoPhong1.Location = new System.Drawing.Point(2, 32);
-            this.lblSoPhong1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSoPhong1.Name = "lblSoPhong1";
-            this.lblSoPhong1.Size = new System.Drawing.Size(237, 24);
-            this.lblSoPhong1.TabIndex = 1;
-            this.lblSoPhong1.Text = "Mã Bàn: MBA001";
-            this.lblSoPhong1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan1
-            // 
-            this.lblBan1.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan1.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan1.Location = new System.Drawing.Point(0, 0);
-            this.lblBan1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan1.Name = "lblBan1";
-            this.lblBan1.Size = new System.Drawing.Size(242, 24);
-            this.lblBan1.TabIndex = 0;
-            this.lblBan1.Text = "Loại bàn : Tròn";
-            this.lblBan1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panManHinhChinh
             // 
             this.panManHinhChinh.BackColor = System.Drawing.Color.LightBlue;
@@ -443,1012 +281,233 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel12);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.pnlPhong1);
+            this.panel1.Controls.Add(this.flpTable);
             this.panel1.Location = new System.Drawing.Point(250, 100);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1084, 497);
             this.panel1.TabIndex = 13;
             // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.cmbBan12);
-            this.panel9.Controls.Add(this.button15);
-            this.panel9.Controls.Add(this.button16);
-            this.panel9.Controls.Add(this.label22);
-            this.panel9.Controls.Add(this.label23);
-            this.panel9.Controls.Add(this.lblBan12);
-            this.panel9.Location = new System.Drawing.Point(827, 328);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(242, 145);
-            this.panel9.TabIndex = 35;
-            // 
-            // cmbBan12
-            // 
-            this.cmbBan12.FormattingEnabled = true;
-            this.cmbBan12.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan12.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan12.Name = "cmbBan12";
-            this.cmbBan12.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan12.TabIndex = 26;
-            this.cmbBan12.SelectedIndexChanged += new System.EventHandler(this.cmbBan12_SelectedIndexChanged);
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.LightBlue;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(149, 102);
-            this.button15.Margin = new System.Windows.Forms.Padding(2);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(84, 29);
-            this.button15.TabIndex = 10;
-            this.button15.Text = "C/O";
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.LightBlue;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(21, 102);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(84, 29);
-            this.button16.TabIndex = 10;
-            this.button16.Text = "Chi tiết";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label22
-            // 
-            this.label22.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(14, 68);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(91, 24);
-            this.label22.TabIndex = 9;
-            this.label22.Text = "Trạng Thái";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label23
-            // 
-            this.label23.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(2, 32);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(237, 24);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Mã Bàn: MBA012";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan12
-            // 
-            this.lblBan12.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan12.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan12.Location = new System.Drawing.Point(0, 0);
-            this.lblBan12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan12.Name = "lblBan12";
-            this.lblBan12.Size = new System.Drawing.Size(242, 24);
-            this.lblBan12.TabIndex = 0;
-            this.lblBan12.Text = "Loại bàn : Tròn";
-            this.lblBan12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.cmbBan11);
-            this.panel10.Controls.Add(this.button17);
-            this.panel10.Controls.Add(this.button18);
-            this.panel10.Controls.Add(this.label25);
-            this.panel10.Controls.Add(this.label26);
-            this.panel10.Controls.Add(this.lblBan11);
-            this.panel10.Location = new System.Drawing.Point(559, 328);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(242, 145);
-            this.panel10.TabIndex = 34;
-            // 
-            // cmbBan11
-            // 
-            this.cmbBan11.FormattingEnabled = true;
-            this.cmbBan11.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan11.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan11.Name = "cmbBan11";
-            this.cmbBan11.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan11.TabIndex = 26;
-            this.cmbBan11.SelectedIndexChanged += new System.EventHandler(this.cmbBan11_SelectedIndexChanged);
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.LightBlue;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(149, 102);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(84, 29);
-            this.button17.TabIndex = 10;
-            this.button17.Text = "C/O";
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.LightBlue;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(21, 102);
-            this.button18.Margin = new System.Windows.Forms.Padding(2);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(84, 29);
-            this.button18.TabIndex = 10;
-            this.button18.Text = "Chi tiết";
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label25
-            // 
-            this.label25.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(14, 68);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(91, 24);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "Trạng Thái";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label26
-            // 
-            this.label26.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(2, 32);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(237, 24);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "Mã Bàn: MBA011";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan11
-            // 
-            this.lblBan11.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan11.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan11.Location = new System.Drawing.Point(0, 0);
-            this.lblBan11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan11.Name = "lblBan11";
-            this.lblBan11.Size = new System.Drawing.Size(242, 24);
-            this.lblBan11.TabIndex = 0;
-            this.lblBan11.Text = "Loại bàn : Tròn";
-            this.lblBan11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.cmbBan10);
-            this.panel11.Controls.Add(this.button19);
-            this.panel11.Controls.Add(this.button20);
-            this.panel11.Controls.Add(this.label28);
-            this.panel11.Controls.Add(this.label29);
-            this.panel11.Controls.Add(this.lblBan10);
-            this.panel11.Location = new System.Drawing.Point(285, 328);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(242, 145);
-            this.panel11.TabIndex = 33;
-            // 
-            // cmbBan10
-            // 
-            this.cmbBan10.FormattingEnabled = true;
-            this.cmbBan10.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan10.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan10.Name = "cmbBan10";
-            this.cmbBan10.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan10.TabIndex = 26;
-            this.cmbBan10.SelectedIndexChanged += new System.EventHandler(this.cmbBan10_SelectedIndexChanged);
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.LightBlue;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(149, 102);
-            this.button19.Margin = new System.Windows.Forms.Padding(2);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(84, 29);
-            this.button19.TabIndex = 10;
-            this.button19.Text = "C/O";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.LightBlue;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(21, 102);
-            this.button20.Margin = new System.Windows.Forms.Padding(2);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(84, 29);
-            this.button20.TabIndex = 10;
-            this.button20.Text = "Chi tiết";
-            this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label28
-            // 
-            this.label28.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(14, 68);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(91, 24);
-            this.label28.TabIndex = 9;
-            this.label28.Text = "Trạng Thái";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label29
-            // 
-            this.label29.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(2, 32);
-            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(237, 24);
-            this.label29.TabIndex = 1;
-            this.label29.Text = "Mã Bàn: MBA010";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan10
-            // 
-            this.lblBan10.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan10.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan10.Location = new System.Drawing.Point(0, 0);
-            this.lblBan10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan10.Name = "lblBan10";
-            this.lblBan10.Size = new System.Drawing.Size(242, 24);
-            this.lblBan10.TabIndex = 0;
-            this.lblBan10.Text = "Loại bàn : Tròn";
-            this.lblBan10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.cmbBan9);
-            this.panel12.Controls.Add(this.button21);
-            this.panel12.Controls.Add(this.button22);
-            this.panel12.Controls.Add(this.label31);
-            this.panel12.Controls.Add(this.label32);
-            this.panel12.Controls.Add(this.lblBan9);
-            this.panel12.Location = new System.Drawing.Point(17, 328);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(242, 145);
-            this.panel12.TabIndex = 32;
-            // 
-            // cmbBan9
-            // 
-            this.cmbBan9.FormattingEnabled = true;
-            this.cmbBan9.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan9.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan9.Name = "cmbBan9";
-            this.cmbBan9.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan9.TabIndex = 26;
-            this.cmbBan9.SelectedIndexChanged += new System.EventHandler(this.cmbBan9_SelectedIndexChanged);
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.LightBlue;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(149, 102);
-            this.button21.Margin = new System.Windows.Forms.Padding(2);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(84, 29);
-            this.button21.TabIndex = 10;
-            this.button21.Text = "C/O";
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.LightBlue;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(21, 102);
-            this.button22.Margin = new System.Windows.Forms.Padding(2);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(84, 29);
-            this.button22.TabIndex = 10;
-            this.button22.Text = "Chi tiết";
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label31
-            // 
-            this.label31.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(14, 68);
-            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(91, 24);
-            this.label31.TabIndex = 9;
-            this.label31.Text = "Trạng Thái";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label32
-            // 
-            this.label32.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(2, 32);
-            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(237, 24);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "Mã Bàn: MBA009";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan9
-            // 
-            this.lblBan9.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan9.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan9.Location = new System.Drawing.Point(0, 0);
-            this.lblBan9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan9.Name = "lblBan9";
-            this.lblBan9.Size = new System.Drawing.Size(242, 24);
-            this.lblBan9.TabIndex = 0;
-            this.lblBan9.Text = "Loại bàn : Tròn";
-            this.lblBan9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.cmbBan8);
-            this.panel5.Controls.Add(this.button7);
-            this.panel5.Controls.Add(this.button8);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Controls.Add(this.lblMaBan);
-            this.panel5.Controls.Add(this.lblBan8);
-            this.panel5.Location = new System.Drawing.Point(827, 165);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(242, 145);
-            this.panel5.TabIndex = 31;
-            // 
-            // cmbBan8
-            // 
-            this.cmbBan8.FormattingEnabled = true;
-            this.cmbBan8.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan8.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan8.Name = "cmbBan8";
-            this.cmbBan8.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan8.TabIndex = 26;
-            this.cmbBan8.SelectedIndexChanged += new System.EventHandler(this.cmbBan8_SelectedIndexChanged);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.LightBlue;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(149, 102);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(84, 29);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "C/O";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.LightBlue;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(21, 102);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(84, 29);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Chi tiết";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(14, 68);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 24);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Trạng Thái";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblMaBan
-            // 
-            this.lblMaBan.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaBan.Location = new System.Drawing.Point(2, 32);
-            this.lblMaBan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblMaBan.Name = "lblMaBan";
-            this.lblMaBan.Size = new System.Drawing.Size(237, 24);
-            this.lblMaBan.TabIndex = 1;
-            this.lblMaBan.Text = "Mã Bàn: MBA008";
-            this.lblMaBan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan8
-            // 
-            this.lblBan8.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan8.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan8.Location = new System.Drawing.Point(0, 0);
-            this.lblBan8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan8.Name = "lblBan8";
-            this.lblBan8.Size = new System.Drawing.Size(242, 24);
-            this.lblBan8.TabIndex = 0;
-            this.lblBan8.Text = "Loại bàn : Tròn";
-            this.lblBan8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.cmbBan7);
-            this.panel6.Controls.Add(this.button9);
-            this.panel6.Controls.Add(this.button10);
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Controls.Add(this.label14);
-            this.panel6.Controls.Add(this.lblBan7);
-            this.panel6.Location = new System.Drawing.Point(559, 165);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(242, 145);
-            this.panel6.TabIndex = 30;
-            // 
-            // cmbBan7
-            // 
-            this.cmbBan7.FormattingEnabled = true;
-            this.cmbBan7.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan7.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan7.Name = "cmbBan7";
-            this.cmbBan7.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan7.TabIndex = 26;
-            this.cmbBan7.SelectedIndexChanged += new System.EventHandler(this.cmbBan7_SelectedIndexChanged);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.LightBlue;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(149, 102);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(84, 29);
-            this.button9.TabIndex = 10;
-            this.button9.Text = "C/O";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.LightBlue;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(21, 102);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(84, 29);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "Chi tiết";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(14, 68);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 24);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Trạng Thái";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(2, 32);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(237, 24);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Mã Bàn: MBA007\r\n";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan7
-            // 
-            this.lblBan7.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan7.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan7.Location = new System.Drawing.Point(0, 0);
-            this.lblBan7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan7.Name = "lblBan7";
-            this.lblBan7.Size = new System.Drawing.Size(242, 24);
-            this.lblBan7.TabIndex = 0;
-            this.lblBan7.Text = "Loại bàn : Tròn";
-            this.lblBan7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.cmbBan6);
-            this.panel7.Controls.Add(this.button11);
-            this.panel7.Controls.Add(this.button12);
-            this.panel7.Controls.Add(this.label16);
-            this.panel7.Controls.Add(this.label17);
-            this.panel7.Controls.Add(this.lblBan6);
-            this.panel7.Location = new System.Drawing.Point(285, 165);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(242, 145);
-            this.panel7.TabIndex = 29;
-            // 
-            // cmbBan6
-            // 
-            this.cmbBan6.FormattingEnabled = true;
-            this.cmbBan6.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan6.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan6.Name = "cmbBan6";
-            this.cmbBan6.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan6.TabIndex = 26;
-            this.cmbBan6.SelectedIndexChanged += new System.EventHandler(this.cmbBan6_SelectedIndexChanged);
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.LightBlue;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(149, 102);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(84, 29);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "C/O";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.LightBlue;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(21, 102);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(84, 29);
-            this.button12.TabIndex = 10;
-            this.button12.Text = "Chi tiết";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label16
-            // 
-            this.label16.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(14, 68);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(91, 24);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "Trạng Thái";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(2, 32);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(237, 24);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Mã Bàn: MBA006";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan6
-            // 
-            this.lblBan6.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan6.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan6.Location = new System.Drawing.Point(0, 0);
-            this.lblBan6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan6.Name = "lblBan6";
-            this.lblBan6.Size = new System.Drawing.Size(242, 24);
-            this.lblBan6.TabIndex = 0;
-            this.lblBan6.Text = "Loại bàn : Tròn";
-            this.lblBan6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.cmbBan5);
-            this.panel8.Controls.Add(this.button13);
-            this.panel8.Controls.Add(this.button14);
-            this.panel8.Controls.Add(this.label19);
-            this.panel8.Controls.Add(this.label20);
-            this.panel8.Controls.Add(this.lblBan5);
-            this.panel8.Location = new System.Drawing.Point(17, 165);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(242, 145);
-            this.panel8.TabIndex = 28;
-            // 
-            // cmbBan5
-            // 
-            this.cmbBan5.FormattingEnabled = true;
-            this.cmbBan5.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan5.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan5.Name = "cmbBan5";
-            this.cmbBan5.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan5.TabIndex = 26;
-            this.cmbBan5.SelectedIndexChanged += new System.EventHandler(this.cmbBan5_SelectedIndexChanged);
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.LightBlue;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(149, 102);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(84, 29);
-            this.button13.TabIndex = 10;
-            this.button13.Text = "C/O";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.LightBlue;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(21, 102);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(84, 29);
-            this.button14.TabIndex = 10;
-            this.button14.Text = "Chi tiết";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label19
-            // 
-            this.label19.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(14, 68);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 24);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "Trạng Thái";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label20
-            // 
-            this.label20.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(2, 32);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(237, 24);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "Mã Bàn: MBA005";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan5
-            // 
-            this.lblBan5.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan5.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan5.Location = new System.Drawing.Point(0, 0);
-            this.lblBan5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan5.Name = "lblBan5";
-            this.lblBan5.Size = new System.Drawing.Size(242, 24);
-            this.lblBan5.TabIndex = 0;
-            this.lblBan5.Text = "Loại bàn : Tròn";
-            this.lblBan5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.cmbBan4);
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.lblBan4);
-            this.panel4.Location = new System.Drawing.Point(827, 2);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(242, 145);
-            this.panel4.TabIndex = 27;
-            // 
-            // cmbBan4
-            // 
-            this.cmbBan4.FormattingEnabled = true;
-            this.cmbBan4.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan4.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan4.Name = "cmbBan4";
-            this.cmbBan4.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan4.TabIndex = 26;
-            this.cmbBan4.SelectedIndexChanged += new System.EventHandler(this.cmbBan4_SelectedIndexChanged);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.LightBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(149, 102);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 29);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "C/O";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.LightBlue;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(21, 102);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(84, 29);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Chi tiết";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 68);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 24);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Trạng Thái";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(2, 32);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(237, 24);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Mã Bàn: MBA004";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan4
-            // 
-            this.lblBan4.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan4.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan4.Location = new System.Drawing.Point(0, 0);
-            this.lblBan4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan4.Name = "lblBan4";
-            this.lblBan4.Size = new System.Drawing.Size(242, 24);
-            this.lblBan4.TabIndex = 0;
-            this.lblBan4.Text = "Loại bàn : Tròn";
-            this.lblBan4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.cmbBan3);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.lblBan3);
-            this.panel3.Location = new System.Drawing.Point(559, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(242, 145);
-            this.panel3.TabIndex = 6;
-            // 
-            // cmbBan3
-            // 
-            this.cmbBan3.FormattingEnabled = true;
-            this.cmbBan3.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan3.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan3.Name = "cmbBan3";
-            this.cmbBan3.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan3.TabIndex = 26;
-            this.cmbBan3.SelectedIndexChanged += new System.EventHandler(this.cmbBan3_SelectedIndexChanged);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LightBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(149, 102);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 29);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "C/O";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.LightBlue;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(21, 102);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 29);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Chi tiết";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 68);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 24);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Trạng Thái";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(2, 32);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(237, 24);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Mã Bàn: MBA003";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBan3
-            // 
-            this.lblBan3.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan3.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan3.Location = new System.Drawing.Point(0, 0);
-            this.lblBan3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan3.Name = "lblBan3";
-            this.lblBan3.Size = new System.Drawing.Size(242, 24);
-            this.lblBan3.TabIndex = 0;
-            this.lblBan3.Text = "Loại bàn : Tròn";
-            this.lblBan3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.cmbBan2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.txtMaPYC);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.lblBan2);
-            this.panel2.Location = new System.Drawing.Point(285, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Controls.Add(this.btnThemMonAn);
+            this.panel2.Controls.Add(this.txtTotalPrice);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.txtGiamGia);
+            this.panel2.Controls.Add(this.btnGiamGia);
+            this.panel2.Controls.Add(this.nmFoodCount);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.cmbNhomMA);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.cmbMA);
+            this.panel2.Controls.Add(this.lsvOrder);
+            this.panel2.Controls.Add(this.btnThanhToan);
+            this.panel2.Location = new System.Drawing.Point(646, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(242, 145);
-            this.panel2.TabIndex = 5;
+            this.panel2.Size = new System.Drawing.Size(435, 488);
+            this.panel2.TabIndex = 15;
             // 
-            // cmbBan2
+            // txtMaPYC
             // 
-            this.cmbBan2.FormattingEnabled = true;
-            this.cmbBan2.Items.AddRange(new object[] {
-            "Bàn Đang Sử Dụng",
-            "Bàn Trống",
-            "Bàn Đang Dọn"});
-            this.cmbBan2.Location = new System.Drawing.Point(102, 73);
-            this.cmbBan2.Name = "cmbBan2";
-            this.cmbBan2.Size = new System.Drawing.Size(131, 21);
-            this.cmbBan2.TabIndex = 26;
-            this.cmbBan2.SelectedIndexChanged += new System.EventHandler(this.cmbBan2_SelectedIndexChanged);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(149, 102);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 29);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "C/O";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LightBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(21, 102);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 29);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Chi tiết";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.ChiTiet_CLick);
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 68);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 24);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Trạng Thái";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtMaPYC.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtMaPYC.Location = new System.Drawing.Point(139, 13);
+            this.txtMaPYC.Name = "txtMaPYC";
+            this.txtMaPYC.Size = new System.Drawing.Size(121, 20);
+            this.txtMaPYC.TabIndex = 41;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(2, 32);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(68, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Mã Bàn: MBA002";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Size = new System.Drawing.Size(65, 19);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Mã PYC";
             // 
-            // lblBan2
+            // btnThemMonAn
             // 
-            this.lblBan2.BackColor = System.Drawing.Color.IndianRed;
-            this.lblBan2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBan2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBan2.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBan2.Location = new System.Drawing.Point(0, 0);
-            this.lblBan2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBan2.Name = "lblBan2";
-            this.lblBan2.Size = new System.Drawing.Size(242, 24);
-            this.lblBan2.TabIndex = 0;
-            this.lblBan2.Text = "Loại bàn : Tròn";
-            this.lblBan2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThemMonAn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThemMonAn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnThemMonAn.Location = new System.Drawing.Point(96, 401);
+            this.btnThemMonAn.Name = "btnThemMonAn";
+            this.btnThemMonAn.Size = new System.Drawing.Size(112, 60);
+            this.btnThemMonAn.TabIndex = 36;
+            this.btnThemMonAn.Text = "Cập Nhật Món Ăn";
+            this.btnThemMonAn.UseVisualStyleBackColor = true;
+            this.btnThemMonAn.Click += new System.EventHandler(this.btnThemMonAn_Click);
+            // 
+            // txtTotalPrice
+            // 
+            this.txtTotalPrice.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtTotalPrice.Location = new System.Drawing.Point(311, 400);
+            this.txtTotalPrice.Name = "txtTotalPrice";
+            this.txtTotalPrice.ReadOnly = true;
+            this.txtTotalPrice.Size = new System.Drawing.Size(112, 20);
+            this.txtTotalPrice.TabIndex = 35;
+            this.txtTotalPrice.Text = "0";
+            this.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(240, 401);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 19);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "Tổng tiền";
+            // 
+            // txtGiamGia
+            // 
+            this.txtGiamGia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiamGia.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtGiamGia.Location = new System.Drawing.Point(8, 435);
+            this.txtGiamGia.Name = "txtGiamGia";
+            this.txtGiamGia.Size = new System.Drawing.Size(82, 26);
+            this.txtGiamGia.TabIndex = 32;
+            this.txtGiamGia.Text = "0";
+            this.txtGiamGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // btnGiamGia
+            // 
+            this.btnGiamGia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnGiamGia.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnGiamGia.Location = new System.Drawing.Point(8, 401);
+            this.btnGiamGia.Name = "btnGiamGia";
+            this.btnGiamGia.Size = new System.Drawing.Size(82, 28);
+            this.btnGiamGia.TabIndex = 33;
+            this.btnGiamGia.Text = "Giảm giá";
+            this.btnGiamGia.UseVisualStyleBackColor = true;
+            // 
+            // nmFoodCount
+            // 
+            this.nmFoodCount.Location = new System.Drawing.Point(347, 72);
+            this.nmFoodCount.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.nmFoodCount.Name = "nmFoodCount";
+            this.nmFoodCount.Size = new System.Drawing.Size(38, 20);
+            this.nmFoodCount.TabIndex = 31;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(276, 73);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 19);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Số lượng";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label8.Location = new System.Drawing.Point(43, 74);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 19);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Chọn món ăn";
+            // 
+            // cmbNhomMA
+            // 
+            this.cmbNhomMA.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmbNhomMA.FormattingEnabled = true;
+            this.cmbNhomMA.Location = new System.Drawing.Point(139, 42);
+            this.cmbNhomMA.Name = "cmbNhomMA";
+            this.cmbNhomMA.Size = new System.Drawing.Size(121, 21);
+            this.cmbNhomMA.TabIndex = 27;
+            this.cmbNhomMA.SelectedIndexChanged += new System.EventHandler(this.cmbNhomMA_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(6, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 19);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Chọn nhóm món ăn";
+            // 
+            // cmbMA
+            // 
+            this.cmbMA.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmbMA.FormattingEnabled = true;
+            this.cmbMA.Location = new System.Drawing.Point(139, 72);
+            this.cmbMA.Name = "cmbMA";
+            this.cmbMA.Size = new System.Drawing.Size(121, 21);
+            this.cmbMA.TabIndex = 29;
+            // 
+            // lsvOrder
+            // 
+            this.lsvOrder.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lsvOrder.FullRowSelect = true;
+            this.lsvOrder.GridLines = true;
+            this.lsvOrder.Location = new System.Drawing.Point(3, 115);
+            this.lsvOrder.Name = "lsvOrder";
+            this.lsvOrder.Size = new System.Drawing.Size(429, 279);
+            this.lsvOrder.TabIndex = 25;
+            this.lsvOrder.UseCompatibleStateImageBehavior = false;
+            this.lsvOrder.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Mã Phiếu Yêu Cầu";
+            this.columnHeader5.Width = 101;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên Món";
+            this.columnHeader1.Width = 89;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số lượng";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn Giá";
+            this.columnHeader3.Width = 70;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành Tiền";
+            this.columnHeader4.Width = 104;
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThanhToan.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnThanhToan.Location = new System.Drawing.Point(311, 435);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(112, 35);
+            this.btnThanhToan.TabIndex = 15;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
+            // 
+            // flpTable
+            // 
+            this.flpTable.Location = new System.Drawing.Point(3, 3);
+            this.flpTable.Name = "flpTable";
+            this.flpTable.Size = new System.Drawing.Size(640, 488);
+            this.flpTable.TabIndex = 0;
             // 
             // frmManHinhChinh
             // 
@@ -1470,20 +529,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhongTrong)).EndInit();
-            this.pnlPhong1.ResumeLayout(false);
             this.panManHinhChinh.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1504,96 +554,34 @@
         private System.Windows.Forms.Label lblBanDangSuDung;
         private System.Windows.Forms.Label lblPhongTrong;
         private System.Windows.Forms.Label lblHienTrang;
-        private System.Windows.Forms.Panel pnlPhong1;
-        private System.Windows.Forms.Button btnChiTiet;
-        private System.Windows.Forms.Label lblGhiChu1;
-        private System.Windows.Forms.Label lblSoPhong1;
-        private System.Windows.Forms.Label lblBan1;
         private System.Windows.Forms.PictureBox picPhongTrong;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnCheckOut1;
         private System.Windows.Forms.Panel panManHinhChinh;
-        private System.Windows.Forms.ComboBox cmbBan1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.ComboBox cmbBan12;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label lblBan12;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.ComboBox cmbBan11;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label lblBan11;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.ComboBox cmbBan10;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label lblBan10;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.ComboBox cmbBan9;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label lblBan9;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox cmbBan8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lblMaBan;
-        private System.Windows.Forms.Label lblBan8;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ComboBox cmbBan7;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label lblBan7;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.ComboBox cmbBan6;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label lblBan6;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.ComboBox cmbBan5;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label lblBan5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ComboBox cmbBan4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblBan4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox cmbBan3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblBan3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cmbBan2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblBan2;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trangChủToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.FlowLayoutPanel flpTable;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtMaPYC;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnThemMonAn;
+        private System.Windows.Forms.TextBox txtTotalPrice;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtGiamGia;
+        private System.Windows.Forms.Button btnGiamGia;
+        private System.Windows.Forms.NumericUpDown nmFoodCount;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cmbNhomMA;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbMA;
+        private System.Windows.Forms.ListView lsvOrder;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Button btnThanhToan;
     }
 }
