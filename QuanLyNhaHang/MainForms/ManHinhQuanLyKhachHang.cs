@@ -41,10 +41,27 @@ namespace QuanLyNhaHang
             }
             return data;
         }
+        void loadData()
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
 
+            SqlCommand command;
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            DataTable table = new DataTable();
+            command = connection.CreateCommand();
+            command.CommandText = "select*from KhachHang";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+            dgvQuanLyKhachHang.DataSource = table;
+        }
         private void btReset_Click(object sender, EventArgs e)
         {
-            dgvQuanLyKhachHang.DataSource = GetKhachHang().Tables[0];
+            txtMaKh.Text = "";
+            txtTenKh.Text = "";
+            txtDiaChi.Text = "";
+            txtPhone.Text = "";
+            txtSearchKH.Text = "";
         }
 
         private void btThem_Click(object sender, EventArgs e)
@@ -62,6 +79,10 @@ namespace QuanLyNhaHang
                 aa.SelectCommand.ExecuteNonQuery();
                 connection.Close();
                 //SqlDataReader dta = cmd.ExecuteReader();
+                string S_name = txtTenKh.Text;
+                string noti = "Thêm thành công\n" + S_name;
+                MessageBox.Show(noti, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadData();
             }
             catch (Exception ex)
             {
@@ -81,6 +102,10 @@ namespace QuanLyNhaHang
                 aa.SelectCommand.ExecuteNonQuery();
                 connection.Close();
                 //SqlDataReader dta = cmd.ExecuteReader();
+                string S_name = txtTenKh.Text;
+                string noti = "Xóa thành công\n" + S_name;
+                MessageBox.Show(noti, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadData();
             }
             catch (Exception ex)
             {
@@ -103,11 +128,50 @@ namespace QuanLyNhaHang
                 aa.SelectCommand.ExecuteNonQuery();
                 connection.Close();
                 //SqlDataReader dta = cmd.ExecuteReader();
+                string S_name = txtTenKh.Text;
+                string noti = "Sửa thành công\n" + S_name;
+                MessageBox.Show(noti, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadData();
+
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void dgvQuanLyKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = dgvQuanLyKhachHang.CurrentRow.Index;
+            txtMaKh.Text = dgvQuanLyKhachHang.Rows[i].Cells[0].Value.ToString();
+            txtTenKh.Text = dgvQuanLyKhachHang.Rows[i].Cells[1].Value.ToString();
+            txtDiaChi.Text = dgvQuanLyKhachHang.Rows[i].Cells[2].Value.ToString();
+            txtPhone.Text = dgvQuanLyKhachHang.Rows[i].Cells[3].Value.ToString();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+
+            connection.Open();
+            string sqlCode1 = "select * from DBO.SEARCH_KH_TENKH(N'" + txtSearchKH.Text + "')";
+
+            SqlCommand cmd = new SqlCommand(sqlCode1, connection);
+
+            SqlDataReader dataReader = cmd.ExecuteReader();
+            DataTable dataTable = new DataTable();
+
+            dataTable.Load(dataReader);
+            dgvQuanLyKhachHang.DataSource = dataTable;
+            cmd.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadData();
         }
     }
 }

@@ -40,7 +40,7 @@ namespace QuanLyNhaHang
             this.txtMaPYC = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.btnThanhToan = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTotalPrice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.txtGiamGia = new System.Windows.Forms.TextBox();
@@ -53,6 +53,11 @@ namespace QuanLyNhaHang
             this.dtgvCapNhatGoiMon = new System.Windows.Forms.DataGridView();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lsvOrder = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCapNhatGoiMon)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -172,13 +177,16 @@ namespace QuanLyNhaHang
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtTotalPrice
             // 
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox2.Location = new System.Drawing.Point(639, 284);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 25);
-            this.textBox2.TabIndex = 21;
+            this.txtTotalPrice.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtTotalPrice.Location = new System.Drawing.Point(639, 284);
+            this.txtTotalPrice.Name = "txtTotalPrice";
+            this.txtTotalPrice.ReadOnly = true;
+            this.txtTotalPrice.Size = new System.Drawing.Size(121, 25);
+            this.txtTotalPrice.TabIndex = 21;
+            this.txtTotalPrice.Text = "0";
+            this.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -279,7 +287,7 @@ namespace QuanLyNhaHang
             this.dtgvCapNhatGoiMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvCapNhatGoiMon.Location = new System.Drawing.Point(41, 119);
             this.dtgvCapNhatGoiMon.Name = "dtgvCapNhatGoiMon";
-            this.dtgvCapNhatGoiMon.Size = new System.Drawing.Size(719, 159);
+            this.dtgvCapNhatGoiMon.Size = new System.Drawing.Size(23, 159);
             this.dtgvCapNhatGoiMon.TabIndex = 0;
             this.dtgvCapNhatGoiMon.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvCapNhatGoiMon_CellMouseClick);
             // 
@@ -293,7 +301,8 @@ namespace QuanLyNhaHang
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.lsvOrder);
+            this.groupBox1.Controls.Add(this.txtTotalPrice);
             this.groupBox1.Controls.Add(this.txtTimKiem);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dtgvCapNhatGoiMon);
@@ -323,6 +332,38 @@ namespace QuanLyNhaHang
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đặt bàn";
+            // 
+            // lsvOrder
+            // 
+            this.lsvOrder.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lsvOrder.FullRowSelect = true;
+            this.lsvOrder.GridLines = true;
+            this.lsvOrder.Location = new System.Drawing.Point(196, 153);
+            this.lsvOrder.Name = "lsvOrder";
+            this.lsvOrder.Size = new System.Drawing.Size(539, 97);
+            this.lsvOrder.TabIndex = 24;
+            this.lsvOrder.UseCompatibleStateImageBehavior = false;
+            this.lsvOrder.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên Món";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số lượng";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn Giá";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành Tiền";
             // 
             // frmCapNhatGoiMon
             // 
@@ -360,7 +401,7 @@ namespace QuanLyNhaHang
         private System.Windows.Forms.Button btnGiamGia;
         private System.Windows.Forms.ComboBox cmbMA;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTotalPrice;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dtgvCapNhatGoiMon;
         private System.Windows.Forms.Button btnTimKiem;
@@ -369,5 +410,10 @@ namespace QuanLyNhaHang
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListView lsvOrder;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
